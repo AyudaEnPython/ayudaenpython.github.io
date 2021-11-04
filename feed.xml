@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-04T16:47:48+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">AyudaEnPython</title><subtitle>Blog de la comunidad AyudaEnPython dedicado a brinda artículos referentes a Python.</subtitle><author><name>AyudaEnPython</name></author><entry><title type="html">Variables</title><link href="http://localhost:4000/basico/" rel="alternate" type="text/html" title="Variables" /><published>2021-10-01T00:00:00+00:00</published><updated>2021-10-01T00:00:00+00:00</updated><id>http://localhost:4000/basico</id><content type="html" xml:base="http://localhost:4000/basico/">&lt;h2 id=&quot;definiciones&quot;&gt;Definiciones&lt;/h2&gt;
+
+&lt;h3 id=&quot;variables&quot;&gt;Variables&lt;/h3&gt;
+
+&lt;p&gt;Un variable conceptualmente, es un contenedor etiquetado el cual almacena un valor.
+Para una definición más detallada puedes pulsar &lt;a href=&quot;https://es.wikipedia.org/wiki/Variable_(programaci%C3%B3n)&quot; target=&quot;_blank&quot;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;identificador&quot;&gt;Identificador&lt;/h3&gt;
+
+&lt;p&gt;Un identificador es un nombre que puede darse a una variable, función, clase, módulo u otro
+objeto (en Python todo es un objeto). Los identificadores empiezan con una letra (A-Z, a-z) o
+con guión bajo (_), seguido de más letras, guiones bajos o dígitos.
+Los caracteres de puntuación como @, $ y ! no estan permitidos como identificadores.&lt;/p&gt;
+
+&lt;p&gt;Las mayúsculas y minúsculas son distintivas, “jugadores” no es igual a “JUGADORES”, de la misma forma “Jugadores” no es igual a “jugadores”.&lt;/p&gt;
+
+&lt;h3 id=&quot;palabras-reservadas&quot;&gt;Palabras reservadas&lt;/h3&gt;
+
+&lt;p&gt;No puedes usar las siguientes palabras reservadas como identificadores:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;False&lt;/td&gt;
+    &lt;td&gt;None&lt;/td&gt;
+    &lt;td&gt;True&lt;/td&gt;
+    &lt;td&gt;and&lt;/td&gt;
+    &lt;td&gt;as&lt;/td&gt;
+    &lt;td&gt;assert&lt;/td&gt;
+    &lt;td&gt;async&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;await&lt;/td&gt;
+    &lt;td&gt;break&lt;/td&gt;
+    &lt;td&gt;class&lt;/td&gt;
+    &lt;td&gt;continue&lt;/td&gt;
+    &lt;td&gt;def&lt;/td&gt;
+    &lt;td&gt;del&lt;/td&gt;
+    &lt;td&gt;elif&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;else&lt;/td&gt;
+    &lt;td&gt;except&lt;/td&gt;
+    &lt;td&gt;finally&lt;/td&gt;
+    &lt;td&gt;for&lt;/td&gt;
+    &lt;td&gt;from&lt;/td&gt;
+    &lt;td&gt;global&lt;/td&gt;
+    &lt;td&gt;if&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;import&lt;/td&gt;
+    &lt;td&gt;in&lt;/td&gt;
+    &lt;td&gt;is&lt;/td&gt;
+    &lt;td&gt;lambda&lt;/td&gt;
+    &lt;td&gt;nonlocal&lt;/td&gt;
+    &lt;td&gt;not&lt;/td&gt;
+    &lt;td&gt;or&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;pass&lt;/td&gt;
+    &lt;td&gt;raise&lt;/td&gt;
+    &lt;td&gt;return&lt;/td&gt;
+    &lt;td&gt;try&lt;/td&gt;
+    &lt;td&gt;while&lt;/td&gt;
+    &lt;td&gt;with&lt;/td&gt;
+    &lt;td&gt;yield&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;definiendo-variables&quot;&gt;Definiendo variables&lt;/h2&gt;
+
+&lt;p&gt;Para definir una variable en Python, simplemente asignamos un valor a un identificador. Por ejemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resultado&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Resultado&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resultado&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Resultado&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Miguel Kanashiro</name></author><summary type="html">Definiciones, identificador, palabras reservadas</summary></entry><entry><title type="html">Bienvenidos!</title><link href="http://localhost:4000/bienvenido/" rel="alternate" type="text/html" title="Bienvenidos!" /><published>2021-09-01T00:00:00+00:00</published><updated>2021-09-01T00:00:00+00:00</updated><id>http://localhost:4000/bienvenido</id><content type="html" xml:base="http://localhost:4000/bienvenido/">&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;saludar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nombre&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;Saludo de bienvenida a los integrantes de la comunidad
+    &apos;Ayuda en Python&apos;.
+
+    :param nombre: Nombre de usuario
+    :type nombre: str
+    :return: Mensaje de bienvenida
+    :rtype: str
+    &quot;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hola &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nombre&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;capitalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;, &quot;&lt;/span&gt; \
+        &lt;span class=&quot;s&quot;&gt;&quot;&apos;Ayuda en Python&apos; te da la bienvenida!&quot;&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;__main__&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;nombre&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Ingresa tu nombre: &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;saludar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nombre&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Bienvenido a nuestro sitio web, aquí podras encontrar diversos recursos
+que te servirán en tu crecimiento como programador.&lt;/p&gt;
+
+&lt;p&gt;Queremos resaltar que en nuestro tiempo libre, contribuimos todo lo que
+podemos ayudando a programadores de Python de una u otra manera sin esperar
+retribución económica alguna, no es nuestra finalidad ni próposito a futuro,
+simplemente son las ganas de darle la mano a alguien cuando lo necesita
+sin esperar algo a cambio.&lt;/p&gt;
+
+&lt;p&gt;Si compartes esas mismas ganas y quieres empezar a contribuir en este
+proyecto, te invitamos a unirte a nuestro equipo, ve a nuestro
+&lt;a href=&quot;https://www.facebook.com/groups/ayudapython&quot;&gt;grupo&lt;/a&gt; y ponte en contacto
+con nosotros (a través de una publicación, comentario o por mensaje interno
+a los administradores y/o moderadores).&lt;/p&gt;
+
+&lt;div class=&quot;notice&quot;&gt;
+  
+&lt;h4 id=&quot;buscamos&quot;&gt;Buscamos&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Colaboradores: cualquier aporte es valioso&lt;/li&gt;
+  &lt;li&gt;Redactores: te gustaría escribir un tutorial o artículo?&lt;/li&gt;
+  &lt;li&gt;Practicantes: la práctica hace al maestro, no?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Te brindaremos todos los detalles de las tecnologías y herramientas que usamos
+en este proyecto que día a día va creciendo.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Realmente esperamos que todo los recursos presentes en nuestros diferentes
+canales te sean de mucha utilidad, saludos!&lt;/p&gt;
+
+&lt;p class=&quot;notice--success&quot;&gt;&lt;strong&gt;Recuerda:&lt;/strong&gt; Únete a nuestro &lt;a href=&quot;https://www.facebook.com/groups/ayudapython&quot;&gt;grupo&lt;/a&gt;
+y trata de brindar todo el apoyo que puedas dar si ves que otro miembro de la 
+comunidad lo necesita. No importa el nivel que tengas, habrá oportunidad de darle
+la mano a alguien en algún momento.&lt;/p&gt;</content><author><name>AyudaEnPython</name></author><summary type="html">Unas palabras de bienvenida y un simple saludo (en código) de parte nuestra.</summary></entry></feed>
