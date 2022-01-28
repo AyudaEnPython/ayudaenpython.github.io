@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-04T16:47:48+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">AyudaEnPython</title><subtitle>Blog de la comunidad AyudaEnPython dedicado a brinda artículos referentes a Python.</subtitle><author><name>AyudaEnPython</name></author><entry><title type="html">Variables</title><link href="http://localhost:4000/basico/" rel="alternate" type="text/html" title="Variables" /><published>2021-10-01T00:00:00+00:00</published><updated>2021-10-01T00:00:00+00:00</updated><id>http://localhost:4000/basico</id><content type="html" xml:base="http://localhost:4000/basico/">&lt;h2 id=&quot;definiciones&quot;&gt;Definiciones&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-01-28T04:51:43+00:00</updated><id>/feed.xml</id><title type="html">AyudaEnPython</title><subtitle>Blog de la comunidad AyudaEnPython dedicado a brinda artículos referentes a Python.</subtitle><author><name>AyudaEnPython</name></author><entry><title type="html">Espacios de nombre y alcance</title><link href="/namespace/" rel="alternate" type="text/html" title="Espacios de nombre y alcance" /><published>2021-10-02T00:00:00+00:00</published><updated>2021-10-02T00:00:00+00:00</updated><id>/namespace</id><content type="html" xml:base="/namespace/">&lt;p&gt;Entender bien los espacios de nombre y su alcance en Python permiten
+mejorar la legibilidad del código.&lt;/p&gt;
+
+&lt;h1 id=&quot;espacios-de-nombre-namepaces&quot;&gt;Espacios de nombre (namepaces)&lt;/h1&gt;
+
+&lt;p&gt;Existen 4 tipos de espacios de nombre&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Built-in&lt;/li&gt;
+  &lt;li&gt;Global&lt;/li&gt;
+  &lt;li&gt;Enclosing&lt;/li&gt;
+  &lt;li&gt;Local&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;buenas-prácticas&quot;&gt;Buenas prácticas&lt;/h1&gt;
+
+&lt;p&gt;Por lo general en cualquier lenguaje de programación no se aconseja
+modificar variables globales.&lt;/p&gt;
+
+&lt;p&gt;Cuando una función modifica algun dato fuera de su alcance local, ya
+sea usando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;global&lt;/code&gt; o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nonlocal&lt;/code&gt;, produce un efecto secundario que
+podría resultar en un error dificil de rastrear.&lt;/p&gt;</content><author><name>Miguel Kanashiro</name></author><summary type="html">Definiciones, identificador, palabras reservadas</summary></entry><entry><title type="html">Variables</title><link href="/variables/" rel="alternate" type="text/html" title="Variables" /><published>2021-10-01T00:00:00+00:00</published><updated>2021-10-01T00:00:00+00:00</updated><id>/variables</id><content type="html" xml:base="/variables/">&lt;h2 id=&quot;definiciones&quot;&gt;Definiciones&lt;/h2&gt;
 
 &lt;h3 id=&quot;variables&quot;&gt;Variables&lt;/h3&gt;
 
@@ -12,59 +32,18 @@ objeto (en Python todo es un objeto). Los identificadores empiezan con una letra
 con guión bajo (_), seguido de más letras, guiones bajos o dígitos.
 Los caracteres de puntuación como @, $ y ! no estan permitidos como identificadores.&lt;/p&gt;
 
-&lt;p&gt;Las mayúsculas y minúsculas son distintivas, “jugadores” no es igual a “JUGADORES”, de la misma forma “Jugadores” no es igual a “jugadores”.&lt;/p&gt;
+&lt;p&gt;Las mayúsculas y minúsculas son distintivas, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jugadores&lt;/code&gt; no es igual a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;JUGADORES&lt;/code&gt;, de la misma forma &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Jugadores&lt;/code&gt; no es igual a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jugadores&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;palabras-reservadas&quot;&gt;Palabras reservadas&lt;/h3&gt;
 
 &lt;p&gt;No puedes usar las siguientes palabras reservadas como identificadores:&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;tr&gt;
-    &lt;td&gt;False&lt;/td&gt;
-    &lt;td&gt;None&lt;/td&gt;
-    &lt;td&gt;True&lt;/td&gt;
-    &lt;td&gt;and&lt;/td&gt;
-    &lt;td&gt;as&lt;/td&gt;
-    &lt;td&gt;assert&lt;/td&gt;
-    &lt;td&gt;async&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;await&lt;/td&gt;
-    &lt;td&gt;break&lt;/td&gt;
-    &lt;td&gt;class&lt;/td&gt;
-    &lt;td&gt;continue&lt;/td&gt;
-    &lt;td&gt;def&lt;/td&gt;
-    &lt;td&gt;del&lt;/td&gt;
-    &lt;td&gt;elif&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;else&lt;/td&gt;
-    &lt;td&gt;except&lt;/td&gt;
-    &lt;td&gt;finally&lt;/td&gt;
-    &lt;td&gt;for&lt;/td&gt;
-    &lt;td&gt;from&lt;/td&gt;
-    &lt;td&gt;global&lt;/td&gt;
-    &lt;td&gt;if&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;import&lt;/td&gt;
-    &lt;td&gt;in&lt;/td&gt;
-    &lt;td&gt;is&lt;/td&gt;
-    &lt;td&gt;lambda&lt;/td&gt;
-    &lt;td&gt;nonlocal&lt;/td&gt;
-    &lt;td&gt;not&lt;/td&gt;
-    &lt;td&gt;or&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;pass&lt;/td&gt;
-    &lt;td&gt;raise&lt;/td&gt;
-    &lt;td&gt;return&lt;/td&gt;
-    &lt;td&gt;try&lt;/td&gt;
-    &lt;td&gt;while&lt;/td&gt;
-    &lt;td&gt;with&lt;/td&gt;
-    &lt;td&gt;yield&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;False   None    True    and       as        assert  async
+await   break   class   continue  def       del     elif
+else    except  finally for       from      global  if
+import  in      is      lambda    nonlocal  not     or
+pass    raise   return  try       while     with    yield
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;definiendo-variables&quot;&gt;Definiendo variables&lt;/h2&gt;
 
@@ -74,7 +53,7 @@ Los caracteres de puntuación como @, $ y ! no estan permitidos como identificad
 &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Resultado&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;a&quot;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resultado&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Resultado&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Miguel Kanashiro</name></author><summary type="html">Definiciones, identificador, palabras reservadas</summary></entry><entry><title type="html">Bienvenidos!</title><link href="http://localhost:4000/bienvenido/" rel="alternate" type="text/html" title="Bienvenidos!" /><published>2021-09-01T00:00:00+00:00</published><updated>2021-09-01T00:00:00+00:00</updated><id>http://localhost:4000/bienvenido</id><content type="html" xml:base="http://localhost:4000/bienvenido/">&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;saludar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nombre&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Miguel Kanashiro</name></author><summary type="html">Definiciones, identificador, palabras reservadas</summary></entry><entry><title type="html">Bienvenidos!</title><link href="/bienvenido/" rel="alternate" type="text/html" title="Bienvenidos!" /><published>2021-09-01T00:00:00+00:00</published><updated>2021-09-01T00:00:00+00:00</updated><id>/bienvenido</id><content type="html" xml:base="/bienvenido/">&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;saludar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nombre&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;Saludo de bienvenida a los integrantes de la comunidad
     &apos;Ayuda en Python&apos;.
 

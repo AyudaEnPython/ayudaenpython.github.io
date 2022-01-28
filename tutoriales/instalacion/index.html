@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Bienvenidos! - AyudaEnPython</title>
-<meta name="description" content="Unas palabras de bienvenida y un simple saludo (en código) de parte nuestra.">
+<!-- begin _includes/seo.html --><title>Instalación - AyudaEnPython</title>
+<meta name="description" content="Instalación de Python en Windows, Linux y MacOS.">
 
 
   <meta name="author" content="AyudaEnPython">
@@ -16,26 +16,26 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="AyudaEnPython">
-<meta property="og:title" content="Bienvenidos!">
-<meta property="og:url" content="/bienvenido/">
+<meta property="og:title" content="Instalación">
+<meta property="og:url" content="/tutoriales/instalacion/">
 
 
-  <meta property="og:description" content="Unas palabras de bienvenida y un simple saludo (en código) de parte nuestra.">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2021-09-01T00:00:00+00:00">
+  <meta property="og:description" content="Instalación de Python en Windows, Linux y MacOS.">
 
 
 
 
 
 
-<link rel="canonical" href="/bienvenido/">
+
+  <meta property="article:published_time" content="2022-01-28T04:51:43+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="/tutoriales/instalacion/">
 
 
 
@@ -255,37 +255,19 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Bienvenidos!">
-    <meta itemprop="description" content="Unas palabras de bienvenida y un simple saludo (en código) de parte nuestra.">
-    <meta itemprop="datePublished" content="2021-09-01T00:00:00+00:00">
+    <meta itemprop="headline" content="Instalación">
+    <meta itemprop="description" content="Instalación de Python en Windows, Linux y MacOS.">
+    
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="/bienvenido/" class="u-url" itemprop="url">Bienvenidos!
+            <a href="/tutoriales/instalacion/" class="u-url" itemprop="url">Instalación
 </a>
           </h1>
           
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          1 minuto(s) de lectura
-        
-      </span>
-    
-  </p>
 
 
         </header>
@@ -293,61 +275,46 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="s">"""Saludo de bienvenida a los integrantes de la comunidad
-    'Ayuda en Python'.
+        <h2 id="instalación">Instalación</h2>
 
-    :param nombre: Nombre de usuario
-    :type nombre: str
-    :return: Mensaje de bienvenida
-    :rtype: str
-    """</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s">"Hola </span><span class="si">{</span><span class="n">nombre</span><span class="p">.</span><span class="n">capitalize</span><span class="p">()</span><span class="si">}</span><span class="s">, "</span> \
-        <span class="s">"'Ayuda en Python' te da la bienvenida!"</span>
+<h3 id="instalar-en-windows">Instalar en Windows</h3>
 
+<p>Primero seguir las instrucciones de instalación para <a href="https://chocolatey.org/install">Chocolatey</a>
+(gestor de paquetes al estilo de apt-get):</p>
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
-    <span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Ingresa tu nombre: "</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">))</span>
+<blockquote>
+  <p><em><strong>Nota</strong></em>: Copiar y ejecutar el siguiente comando en PowerShell</p>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Set-ExecutionPolicy Bypass <span class="nt">-Scope</span> Process <span class="nt">-Force</span><span class="p">;</span> <span class="o">[</span>System.Net.ServicePointManager]::SecurityProtocol <span class="o">=</span> <span class="o">[</span>System.Net.ServicePointManager]::SecurityProtocol <span class="nt">-bor</span> 3072<span class="p">;</span> iex <span class="o">((</span>New-Object System.Net.WebClient<span class="o">)</span>.DownloadString<span class="o">(</span><span class="s1">'https://community.chocolatey.org/install.ps1'</span><span class="o">))</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>Una vez instaldo Chocolatey, instalar Python es sencillo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>choco <span class="nb">install </span>python
 </code></pre></div></div>
 
-<p>Bienvenido a nuestro sitio web, aquí podras encontrar diversos recursos
-que te servirán en tu crecimiento como programador.</p>
+<h3 id="instalar-en-linux">Instalar en Linux</h3>
 
-<p>Queremos resaltar que en nuestro tiempo libre, contribuimos todo lo que
-podemos ayudando a programadores de Python de una u otra manera sin esperar
-retribución económica alguna, no es nuestra finalidad ni próposito a futuro,
-simplemente son las ganas de darle la mano a alguien cuando lo necesita
-sin esperar algo a cambio.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>python3.10
+</code></pre></div></div>
 
-<p>Si compartes esas mismas ganas y quieres empezar a contribuir en este
-proyecto, te invitamos a unirte a nuestro equipo, ve a nuestro
-<a href="https://www.facebook.com/groups/ayudapython">grupo</a> y ponte en contacto
-con nosotros (a través de una publicación, comentario o por mensaje interno
-a los administradores y/o moderadores).</p>
+<h3 id="instalar-en-mac">Instalar en Mac</h3>
 
-<div class="notice">
-  
-<h4 id="buscamos">Buscamos</h4>
+<p>Antes de instalar Python, se necesita instalar GCC. GCC puede ser obtenido descargando Xcode,
+Command Line Tools o el paquete OSX-GCC-Installer.</p>
 
-<ul>
-  <li>Colaboradores: cualquier aporte es valioso</li>
-  <li>Redactores: te gustaría escribir un tutorial o artículo?</li>
-  <li>Practicantes: la práctica hace al maestro, no?</li>
-</ul>
+<p>Para instalar Homebrew (gestor de paquetes), abrir el terminal y ejecutar:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/install.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
 
-<p>Te brindaremos todos los detalles de las tecnologías y herramientas que usamos
-en este proyecto que día a día va creciendo.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"/usr/local/opt/python/libexec/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
+</code></pre></div></div>
 
-</div>
+<p>Por último:</p>
 
-<p>Realmente esperamos que todo los recursos presentes en nuestros diferentes
-canales te sean de mucha utilidad, saludos!</p>
-
-<p class="notice--success"><strong>Recuerda:</strong> Únete a nuestro <a href="https://www.facebook.com/groups/ayudapython">grupo</a>
-y trata de brindar todo el apoyo que puedas dar si ves que otro miembro de la 
-comunidad lo necesita. No importa el nivel que tengas, habrá oportunidad de darle
-la mano a alguien en algún momento.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>python
+</code></pre></div></div>
 
         
       </section>
@@ -359,30 +326,18 @@ la mano a alguien en algún momento.</p>
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time class="dt-published" datetime="2021-09-01T00:00:00+00:00">September 1, 2021</time></p>
-
       </footer>
 
-      <section class="page__share">
-  
-    <h4 class="page__share-title">Compartir en</h4>
-  
-
-  <a href="https://twitter.com/intent/tweet?text=Bienvenidos%21%20%2Fbienvenido%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fbienvenido%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fbienvenido%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Compartir en LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
+      
 
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">Anterior</a>
+      <a href="/tutoriales/introduccion/" class="pagination--pager" title="Introducción
+">Anterior</a>
     
     
-      <a href="/variables/" class="pagination--pager" title="Variables
+      <a href="/tutoriales/tipado-dinamico-y-fuerte/" class="pagination--pager" title="Python es de tipado dinámico y fuerte
 ">Siguiente</a>
     
   </nav>
