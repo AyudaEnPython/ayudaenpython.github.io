@@ -1,8 +1,11 @@
 # Blog de la comunidad AyudaEnPython
 
-Se parte de nuestra comunidad [AyudaEnPython](https://www.facebook.com/groups/ayudapython), nuestra finalidad es brindar apoyo a cualquier problema (principiante, intermedio, avanzado) compartiendo información, conocimientos y experiencias relacionadas a Python.
+Se parte de nuestra comunidad [AyudaEnPython](https://www.facebook.com/groups/ayudapython),
+nuestra finalidad es brindar apoyo a cualquier problema (principiante, intermedio, avanzado)
+compartiendo información, conocimientos y experiencias relacionadas a Python.
 
-Si deseas colaborar con este blog, puedes encontrar una plantilla básica en este [enlace](https://github.com/AyudaEnPython/AyudaEnPython/blob/main/_aep/template.md).
+Si deseas colaborar con este blog, puedes encontrar una plantilla básica en
+este [enlace](https://github.com/AyudaEnPython/AyudaEnPython/blob/main/_aep/template.md).
 
 ---
 
