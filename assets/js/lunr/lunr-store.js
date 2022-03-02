@@ -1,20 +1,8 @@
 var store = [{
-        "title": "Bienvenidos!",
-        "excerpt":"def saludar(nombre: str) -&gt; str: \"\"\"Saludo de bienvenida a los integrantes de la comunidad 'Ayuda en Python'. :param nombre: Nombre de usuario :type nombre: str :return: Mensaje de bienvenida :rtype: str \"\"\" return f\"Hola {nombre.capitalize()}, \" \\ \"'Ayuda en Python' te da la bienvenida!\" if __name__ == \"__main__\": nombre =...","categories": [],
+        "title": "Bienvenidos a nuestro proyecto AyudaEnPython!",
+        "excerpt":"Bienvenidos def saludar(nombre: str) -&gt; str: \"\"\"Saludo de bienvenida a los integrantes de la comunidad 'Ayuda en Python'. :param nombre: Nombre de usuario :type nombre: str :return: Mensaje de bienvenida :rtype: str \"\"\" return f\"Hola {nombre.capitalize()}, \" \\ \"'Ayuda en Python' te da la bienvenida!\" if __name__ == \"__main__\": nombre...","categories": [],
         "tags": [],
         "url": "/bienvenido/",
-        "teaser": null
-      },{
-        "title": "Variables",
-        "excerpt":"Definiciones Variables Un variable conceptualmente, es un contenedor etiquetado el cual almacena un valor. Para una definición más detallada puedes pulsar aquí. Identificador Un identificador es un nombre que puede darse a una variable, función, clase, módulo u otro objeto (en Python todo es un objeto). Los identificadores empiezan con...","categories": [],
-        "tags": [],
-        "url": "/variables/",
-        "teaser": null
-      },{
-        "title": "Espacios de nombre y alcance",
-        "excerpt":"Entender bien los espacios de nombre y su alcance en Python permiten mejorar la legibilidad del código. Espacios de nombre (namepaces) Existen 4 tipos de espacios de nombre Built-in Global Enclosing Local Buenas prácticas Por lo general en cualquier lenguaje de programación no se aconseja modificar variables globales. Cuando una...","categories": [],
-        "tags": [],
-        "url": "/namespace/",
         "teaser": null
       },{
         "title": "Generar números aleatorios",
@@ -36,14 +24,26 @@ var store = [{
         "teaser": null
       },{
         "title": "Python es de tipado dinámico y fuerte",
-        "excerpt":"Python efectivamente es fuertemente tipado y dinámico a la vez, para ello vamos a analizarlo por partes: Tipado dinámico Un lenguaje de programación usa un tipado dinámico cuando la comprobación de tipificación (typing) se realiza durante su ejecución y no en su compilación. &gt;&gt;&gt; numero = 1 &gt;&gt;&gt; print(numero) 1...","categories": [],
+        "excerpt":"Python efectivamente es fuertemente tipado y dinámico a la vez, para ello vamos a analizarlo por partes: Tipado dinámico Un lenguaje de programación usa un tipado dinámico cuando la comprobación de tipificación (typing) se realiza durante su ejecución y no en su compilación. 1 &gt;&gt;&gt; numero = 1 &gt;&gt;&gt; print(numero)...","categories": [],
         "tags": [],
         "url": "/tutoriales/tipado-dinamico-y-fuerte/",
         "teaser": null
       },{
         "title": "Estructuras de Datos",
-        "excerpt":"Listas (list) Es una secuencia ordenada y mutable de elementos (de diferentes tipos) usadas para almacenar colecciones de elementos homogéneos. &gt;&gt;&gt; pares = [2, 4, 6, 8] print(pares) [2, 4, 6, 8] Tuplas (tuple) Son secuencias inmutables usadas normalmente para almacenar colecciones de datos heterogéneos. &gt;&gt;&gt; vocales = ('a', 'e',...","categories": [],
+        "excerpt":"Una estructura de datos es una forma particular de organizar datos en una computadora para que puedan ser utilizados de manera eficiente. 1 Python ayuda a aprender los fundamentos de estas estructuras de una manera simple comparada a otros lenguajes de programación, ofreciendo en su documentación oficial varios ejemplos. 2...","categories": [],
         "tags": [],
         "url": "/tutoriales/estructuras-de-datos/",
+        "teaser": null
+      },{
+        "title": "Conceptos Básicos",
+        "excerpt":"Variable Un variable conceptualmente es un contenedor etiquetado el cual almacena un valor 1. Para una definición más detallada puedes pulsar aquí. Ejemplo: &gt;&gt;&gt; nombre = \"John\" &gt;&gt;&gt; edad = 18 La variable nombre almacena el valor \"John\" (cadena de texto) y la variable edad almacena el valor 18 (entero)....","categories": [],
+        "tags": [],
+        "url": "/tutoriales/variables/",
+        "teaser": null
+      },{
+        "title": "Espacios de nombre y alcance",
+        "excerpt":"Entender bien los espacios de nombre y su alcance en Python permiten mejorar la legibilidad del código. Espacios de nombre (namepaces) Existen 4 tipos de espacios de nombre Built-in Global Enclosing Local Buenas prácticas Por lo general en cualquier lenguaje de programación no se aconseja modificar variables globales. Cuando una...","categories": [],
+        "tags": [],
+        "url": "/tutoriales/namespace/",
         "teaser": null
       }]
