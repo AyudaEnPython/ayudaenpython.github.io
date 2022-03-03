@@ -30,9 +30,15 @@ var store = [{
         "teaser": null
       },{
         "title": "Conceptos Básicos",
-        "excerpt":"Variable Un variable conceptualmente es un contenedor etiquetado el cual almacena un valor 1. Para una definición más detallada puedes pulsar aquí. Ejemplo: &gt;&gt;&gt; nombre = \"John\" &gt;&gt;&gt; edad = 18 La variable nombre almacena el valor \"John\" (cadena de texto) y la variable edad almacena el valor 18 (entero)....","categories": [],
+        "excerpt":"Indentación En Python la indentación (sangrado) 1 es obligatoria ya que de ella dependerá su estructura. Una indentación de 4 espacios en blanco indicará que las instrucciones indentadas forman parte de una mismo bloque de código. Ejemplo: def main(): print(\"Hola Mundo\") if __name__ == \"__main__\": main() A pesar que la...","categories": [],
         "tags": [],
         "url": "/tutorial-python/conceptos-basicos/",
+        "teaser": null
+      },{
+        "title": "Sintaxis",
+        "excerpt":"Variable Un variable conceptualmente es un contenedor etiquetado el cual almacena un valor 1 (para una definición más detallada puedes pulsar aquí). Para definir una variable en Python, simplemente asignamos un valor a un identificador: &gt;&gt;&gt; nombre = \"John\" &gt;&gt;&gt; apellido = \"Doe\" &gt;&gt;&gt; edad = 18 La variable nombre...","categories": [],
+        "tags": [],
+        "url": "/tutorial-python/sintaxis/",
         "teaser": null
       },{
         "title": "Estructuras de Datos",

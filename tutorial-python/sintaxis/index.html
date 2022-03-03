@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Introducción - AyudaEnPython</title>
-<meta name="description" content="Breve introducción a Python y Zen de Python.">
+<!-- begin _includes/seo.html --><title>Sintaxis - AyudaEnPython</title>
+<meta name="description" content="Sintaxis básica">
 
 
   <meta name="author" content="AyudaEnPython">
@@ -16,11 +16,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="AyudaEnPython">
-<meta property="og:title" content="Introducción">
-<meta property="og:url" content="http://localhost:4000/tutorial-python/introduccion/">
+<meta property="og:title" content="Sintaxis">
+<meta property="og:url" content="http://localhost:4000/tutorial-python/sintaxis/">
 
 
-  <meta property="og:description" content="Breve introducción a Python y Zen de Python.">
+  <meta property="og:description" content="Sintaxis básica">
 
 
 
@@ -35,7 +35,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/tutorial-python/introduccion/">
+<link rel="canonical" href="http://localhost:4000/tutorial-python/sintaxis/">
 
 
 
@@ -172,13 +172,13 @@
         
         <ul>
           
-            <li><a href="/tutorial-python/introduccion/" class="active">Introducción</a></li>
+            <li><a href="/tutorial-python/introduccion/">Introducción</a></li>
           
             <li><a href="/tutorial-python/instalacion/">Instalación</a></li>
           
             <li><a href="/tutorial-python/conceptos-basicos/">Conceptos Básicos</a></li>
           
-            <li><a href="/tutorial-python/sintaxis/">Sintaxis</a></li>
+            <li><a href="/tutorial-python/sintaxis/" class="active">Sintaxis</a></li>
           
         </ul>
         
@@ -238,8 +238,8 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Introducción">
-    <meta itemprop="description" content="Breve introducción a Python y Zen de Python.">
+    <meta itemprop="headline" content="Sintaxis">
+    <meta itemprop="description" content="Sintaxis básica">
     
     
 
@@ -247,7 +247,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/tutorial-python/introduccion/" class="u-url" itemprop="url">Introducción
+            <a href="http://localhost:4000/tutorial-python/sintaxis/" class="u-url" itemprop="url">Sintaxis
 </a>
           </h1>
           
@@ -261,93 +261,64 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-list"></i> Tabla de Contenidos</h4></header>
-              <ul class="toc__menu"><li><a href="#qué-es-python">¿Qué es Python?</a></li><li><a href="#el-zen-de-python---tim-peters">El Zen de Python - Tim Peters</a></li></ul>
+              <ul class="toc__menu"><li><a href="#variable">Variable</a></li></ul>
 
             </nav>
           </aside>
         
-        <h2 id="qué-es-python">¿Qué es Python?</h2>
+        <h2 id="variable">Variable</h2>
 
-<p><img src="/assets/images/tutoriales/python-logo.png" alt="logo de python" class="align-center" /></p>
+<p>Un variable conceptualmente es un contenedor etiquetado el cual almacena un
+valor <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> (para una definición más detallada puedes pulsar
+<a href="https://es.wikipedia.org/wiki/Variable_(programaci%C3%B3n)" target="_blank">aquí</a>).</p>
 
-<p>Python es un lenguaje de programación interpretado cuya filosofía hace
-hincapié en la legibilidad de su código. Se trata de un lenguaje de
-programación multiparadigma, ya que soporta parcialmente la orientación
-a objetos, programación imperativa y, en menor medida, programación
-funcional. Es un lenguaje interpretado, dinámico y multiplataforma. <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+<p>Para definir una variable en Python, simplemente asignamos un valor a un identificador:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">nombre</span> <span class="o">=</span> <span class="s">"John"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">apellido</span> <span class="o">=</span> <span class="s">"Doe"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">edad</span> <span class="o">=</span> <span class="mi">18</span>
+</code></pre></div></div>
+<p>La variable <code class="language-plaintext highlighter-rouge">nombre</code> almacena el valor <code class="language-plaintext highlighter-rouge">"John"</code> (<code class="language-plaintext highlighter-rouge">str</code>, cadena de texto) y la variable
+<code class="language-plaintext highlighter-rouge">edad</code> almacena el valor <code class="language-plaintext highlighter-rouge">18</code> (<code class="language-plaintext highlighter-rouge">int</code>, entero).</p>
 
-<p>Python es un lenguaje de programación potente, fácil de aprender, de 
-sintaxis elegante, tipado dinámico y fuerte que junto a su naturaleza
-interpretada lo convierten en el lenguaje ideal para scripting y 
-desarrollo rápido de aplicaciones en muchas áreas, para la mayoría de 
-plataformas.</p>
+<p>Si por el contrario el identificador contiene un carácter no permitido tendríamos
+un <code class="language-plaintext highlighter-rouge">SyntaxError</code> (Error de sintaxis):</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="o">@</span><span class="n">nombre</span> <span class="o">=</span> <span class="s">"John"</span>
+  <span class="n">File</span> <span class="s">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span>
+    <span class="o">@</span><span class="n">nombre</span> <span class="o">=</span> <span class="s">"John"</span>
+            <span class="o">^</span>
+<span class="nb">SyntaxError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">syntax</span>
+</code></pre></div></div>
 
-<h2 id="el-zen-de-python---tim-peters">El Zen de Python - Tim Peters</h2>
+<p>Para imprimir los valores de esas variables usamos la función <code class="language-plaintext highlighter-rouge">print</code>:</p>
 
-<p><img src="/assets/images/tutoriales/zen.png" alt="zen de python" class="align-center" /></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+<span class="n">John</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">apellido</span><span class="p">)</span>
+<span class="n">Doe</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">edad</span><span class="p">)</span>
+<span class="mi">18</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s"> </span><span class="si">{</span><span class="n">apellido</span><span class="si">}</span><span class="s"> tiene </span><span class="si">{</span><span class="n">edad</span><span class="si">}</span><span class="s"> años"</span><span class="p">)</span>
+<span class="n">John</span> <span class="n">Doe</span> <span class="n">tiene</span> <span class="mi">18</span> <span class="n">años</span>
+</code></pre></div></div>
 
-<p>El “Zen de Python” es una colección de 20 principios de software, de los 
-cuales 19 fueron escritos por Tim Peters <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> (1 reservado para Guido),
-originalmente posteado en un hilo llamado “The Way of Python”. <sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup></p>
+<p>Debemos recordar que las mayúsculas y minúsculas son distintivas, <code class="language-plaintext highlighter-rouge">nombre</code> no es
+igual a <code class="language-plaintext highlighter-rouge">NOMBRE</code>, de la misma forma que <code class="language-plaintext highlighter-rouge">Nombre</code> no sería igual a <code class="language-plaintext highlighter-rouge">nombre</code>.</p>
 
-<p>Está escrito como la entrada informativa número 20 de las “Propuestas de
-Mejoras de Python” (PEP, Python Enhancement Proposals) y se puede encontrar
-en el sitio oficial de Python. <sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup></p>
-
-<ul>
-  <li>Beautiful is better than ugly (Bello es mejor que feo).</li>
-  <li>Explicit is better than implicit (Explícito es mejor que implícito).</li>
-  <li>Simple is better than complex (Simple es mejor que complejo).</li>
-  <li>Complex is better than complicated (Complejo es mejor que complicado).</li>
-  <li>Flat is better than nested (Plano es mejor que anidado).</li>
-  <li>Sparse is better than dense (Disperso es mejor que denso).</li>
-  <li>Readability counts (La legibilidad cuenta).</li>
-  <li>Special cases aren’t special enough to break the rules (Los casos
-especiales no son lo suficientemente especiales para romper las reglas).</li>
-  <li>Although practicality beats purity (A pesar que lo práctico vence a la
-pureza).</li>
-  <li>Errors should never pass silently (Los errores nunca deberían pasar
-silenciosamente).</li>
-  <li>Unless explicitly silenced (A menos que hayan sido silenciados
-explícitamente).</li>
-  <li>In the face of ambiguity, refuse the temptation to guess (Frente a la
-ambiguedad, rechaza la tentación de adivinar).</li>
-  <li>There should be one– and preferably only one –obvious way to do it (
-Debería haber una -y preferiblemente solo una- manera obvia de hacerlo).</li>
-  <li>Although that way may not be obvious at first unless you’re Dutch (Aunque
-esa forma no esa obvia al principio a menos que seas holandés).</li>
-  <li>Now is better than never (Ahora es mejor que nunca).</li>
-  <li>Although never is often better than <em>right</em> now (Aunque nunca es a menudo
-mejor que ahora mismo).</li>
-  <li>If the implementation is hard to explain, it’s a bad idea (Si la
-implementación es difícil de explicar, es una mala idea).</li>
-  <li>If the implementation is easy to explain, it may be a good idea (Si la
-implementación es fácil de explicar, puede ser una buena idea).</li>
-  <li>Namespaces are one honking great idea – let’s do more of those (Los espacios
-de nombres son una gran idea – hagammos más de esos).</li>
-</ul>
-
-<blockquote>
-  <p><strong><em>Easter Egg</em></strong>:</p>
-
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; import this
-</code></pre></div>  </div>
-</blockquote>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">nombre</span> <span class="o">=</span> <span class="s">"John"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">NOMBRE</span> <span class="o">=</span> <span class="s">"Jane"</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">nombre</span><span class="p">)</span>
+<span class="n">John</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">NOMBRE</span><span class="p">)</span>
+<span class="n">Jane</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">nombre</span> <span class="o">==</span> <span class="n">NOMBRE</span><span class="p">)</span>
+<span class="bp">False</span>
+</code></pre></div></div>
 
 <hr />
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1" role="doc-endnote">
-      <p><a href="https://es.wikipedia.org/wiki/Python">Wikipedia: Python</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:2" role="doc-endnote">
-      <p><a href="https://es.wikipedia.org/wiki/Zen_de_Python">Wikipedia: Zen de Python</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:3" role="doc-endnote">
-      <p><a href="https://groups.google.com/g/comp.lang.python/c/B_VxeTBClM0/m/L8W9KlsiriUJ">The way of Python</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:4" role="doc-endnote">
-      <p><a href="https://www.python.org/dev/peps/pep-0020/">PEP 20</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p><a href="https://es.wikipedia.org/wiki/Variable_(programaci%C3%B3n)">Wikipedia: Variables</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -369,10 +340,11 @@ de nombres son una gran idea – hagammos más de esos).</li>
       
   <nav class="pagination">
     
-      <a href="#" class="pagination--pager disabled">Anterior</a>
+      <a href="/tutorial-python/conceptos-basicos/" class="pagination--pager" title="Conceptos Básicos
+">Anterior</a>
     
     
-      <a href="/tutorial-python/instalacion/" class="pagination--pager" title="Instalación
+      <a href="/tutorial-python/estructuras-de-datos/" class="pagination--pager" title="Estructuras de Datos
 ">Siguiente</a>
     
   </nav>
