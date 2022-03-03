@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Estructuras de Datos - AyudaEnPython</title>
+<meta name="description" content="Listas, tuplas, diccionarios y conjuntos">
+
+
+  <meta name="author" content="AyudaEnPython">
+  
+  <meta property="article:author" content="AyudaEnPython">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="AyudaEnPython">
+<meta property="og:title" content="Estructuras de Datos">
+<meta property="og:url" content="/tutorial-python/estructuras-de-datos/">
+
+
+  <meta property="og:description" content="Listas, tuplas, diccionarios y conjuntos">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-03-03T03:04:01+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="/tutorial-python/estructuras-de-datos/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "AyudaEnPython",
+      "url": "/"
+    
+  }
+</script>
+
+
+  <meta name="google-site-verification" content="IQEKfQ9ena-yQnt-pfeq3LJz7XFNGBEn7-I_Nqa5Rlg" />
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="AyudaEnPython Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<link rel="shortcout icon" type="image/x-icon" href="//assets/images/favicon.ico">
+
+<!-- end custom head snippets -->
+  </head>
+  
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Saltar a navegación principal</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Saltar a contenido</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Saltar a pie</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/nav_logo.png" alt=" "></a>
+        
+        <a class="site-title" href="/">
+           
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/articulos/">Artículos</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tutoriales/">Tutoriales</a>
+            </li><li class="masthead__menu-item">
+              <a href="/revisiones/">Revisiones</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">Nosotros</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Alternar búsqueda</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Alternar menú</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Alternar menú</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <span class="nav__sub-title">Introducción</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/tutorial-python/introduccion/">Introducción</a></li>
+          
+            <li><a href="/tutorial-python/instalacion/">Instalación</a></li>
+          
+            <li><a href="/tutorial-python/conceptos-basicos/">Conceptos Básicos</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Estructuras de datos</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/tutorial-python/estructuras-de-datos/" class="active">Estructura de datos</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Estructuras de Control de Flujo</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/tutorial-python/condicionales/">Condicionales</a></li>
+          
+            <li><a href="/tutorial-python/iterativas/">Iterativas</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Funciones</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/tutorial-python/funciones/">Funciones</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Estructuras de Datos">
+    <meta itemprop="description" content="Listas, tuplas, diccionarios y conjuntos">
+    <meta itemprop="datePublished" content="2022-03-03T03:04:01+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="/tutorial-python/estructuras-de-datos/" class="u-url" itemprop="url">Estructuras de Datos
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-list"></i> Tabla de Contenidos</h4></header>
+              <ul class="toc__menu"><li><a href="#listas-list">Listas (list)</a></li><li><a href="#tuplas-tuple">Tuplas (tuple)</a></li><li><a href="#diccionarios-dict">Diccionarios (dict)</a></li><li><a href="#conjuntos-set">Conjuntos (set)</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p>Una estructura de datos es una forma particular de organizar datos en una
+computadora para que puedan ser utilizados de manera eficiente. <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>Python ayuda a aprender los fundamentos de estas estructuras de una manera
+simple comparada a otros lenguajes de programación, ofreciendo en su documentación
+oficial varios ejemplos. <sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
+
+<p>En este artículo veremos las listas, tuplas, diccionarios y conjuntos, dejando
+para un artículo aparte estructuras de datos más complejas como listas enlazadas,
+árboles, grafos, etc.</p>
+
+<h2 id="listas-list">Listas (<code class="language-plaintext highlighter-rouge">list</code>)</h2>
+
+<p>Es una secuencia ordenada y mutable de elementos (de diferentes tipos) usadas
+para almacenar colecciones de elementos homogéneos.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">pares</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">pares</span><span class="p">)</span>
+<span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h2 id="tuplas-tuple">Tuplas (<code class="language-plaintext highlighter-rouge">tuple</code>)</h2>
+
+<p>Son secuencias inmutables usadas normalmente para almacenar colecciones de datos
+heterogéneos.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">vocales</span> <span class="o">=</span> <span class="p">(</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'e'</span><span class="p">,</span> <span class="s">'i'</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span> <span class="s">'u'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">vocales</span><span class="p">)</span>
+<span class="p">(</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'e'</span><span class="p">,</span> <span class="s">'i'</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span> <span class="s">'u'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="diccionarios-dict">Diccionarios (<code class="language-plaintext highlighter-rouge">dict</code>)</h2>
+
+<p>Es un objeto tipo mapa (contenedor que permite búsquedas de claves arbitrarias e implementa
+métodos especificos) que relaciona claves a valores (objetos de cualquier tipo). Los mapas son objetos
+mutables.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">datos</span> <span class="o">=</span> <span class="p">{</span><span class="s">'nombre'</span><span class="p">:</span> <span class="s">'John'</span><span class="p">,</span> <span class="s">'apellido'</span><span class="p">:</span> <span class="s">'Doe'</span><span class="p">,</span> <span class="s">'edad'</span><span class="p">:</span> <span class="mi">21</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">datos</span><span class="p">[</span><span class="s">'nombre'</span><span class="p">]</span>
+<span class="s">'John'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">datos</span><span class="p">[</span><span class="s">'apellido'</span><span class="p">]</span>
+<span class="s">'Doe'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">datos</span><span class="p">[</span><span class="s">'edad'</span><span class="p">]</span>
+<span class="mi">21</span>
+</code></pre></div></div>
+
+<h2 id="conjuntos-set">Conjuntos (<code class="language-plaintext highlighter-rouge">set</code>)</h2>
+
+<p>Un conjunto (<code class="language-plaintext highlighter-rouge">set</code>) es una colección no ordenada y sin elementos repetidos.
+Los usos básicos incluyen verificación de pertenencia y eliminación de 
+entradas duplicadas. Los conjuntos también soportan operaciones matemáticas
+como la unión, intersección, diferencia y diferencia simétrica.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">canasta</span> <span class="o">=</span> <span class="p">{</span><span class="s">'manzana'</span><span class="p">,</span> <span class="s">'naranja'</span><span class="p">,</span> <span class="s">'pera'</span><span class="p">,</span> <span class="s">'plátano'</span><span class="p">,</span> <span class="s">'manzana'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">canasta</span><span class="p">)</span>
+<span class="p">{</span><span class="s">'manzana'</span><span class="p">,</span> <span class="s">'pera'</span><span class="p">,</span> <span class="s">'naranja'</span><span class="p">,</span> <span class="s">'plátano'</span><span class="p">}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s">'pera'</span> <span class="ow">in</span> <span class="n">canasta</span>
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s">'tomate'</span> <span class="ow">in</span> <span class="n">canasta</span>
+<span class="bp">False</span>
+</code></pre></div></div>
+
+<hr />
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://es.wikipedia.org/wiki/Estructura_de_datos">Wikipedia: Estructura de datos</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://docs.python.org/es/3/tutorial/datastructures.html#">Documentación Oficial de Python: Tutorial - Estructuras de datos</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time class="dt-published" datetime="2022-03-03T03:04:01+00:00">March 3, 2022</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/tutorial-python/conceptos-basicos/" class="pagination--pager" title="Conceptos Básicos
+">Anterior</a>
+    
+    
+      <a href="/tutorial-python/condicionales/" class="pagination--pager" title="Estructuras de Control Condicionales
+">Siguiente</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Términos de búsqueda...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Términos de búsqueda..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow", style="text-align: center;">
+    <ul class="social-icons">
+        
+            
+                
+                <li>
+                    <a href="https://www.facebook.com/groups/ayudapython" rel="nofollow noopener noreferrer">
+                        <i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i>
+                        Facebook
+                    </a>
+                </li>
+            
+            
+                
+                <li>
+                    <a href="https://github.com/AyudaEnPython" rel="nofollow noopener noreferrer">
+                        <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+                        GitHub
+                    </a>
+                </li>
+            
+            
+                
+                <li>
+                    <a href="https://ayudaenpython.com" rel="nofollow noopener noreferrer">
+                        <i class="fas fa-fw fa-link" aria-hidden="true"></i>
+                        Website
+                    </a>
+                </li>
+            
+            
+        
+    </ul>
+</div>
+
+<div class="page__footer-copyright", style="text-align: center;">
+    &copy; 2022 <a href="https://ayudaenpython.github.io/blog/" style="text-decoration: none;"> AyudaEnPython</a>.
+</div>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
