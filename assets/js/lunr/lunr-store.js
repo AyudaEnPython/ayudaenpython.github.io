@@ -30,7 +30,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Conceptos Básicos",
-        "excerpt":"Indentación En Python la indentación (sangrado) 1 es obligatoria ya que de ella dependerá su estructura. Una indentación de 4 espacios en blanco indicará que las instrucciones indentadas forman parte de una mismo bloque de código. Ejemplo: def main(): print(\"Hola Mundo\") if __name__ == \"__main__\": main() A pesar que la...","categories": [],
+        "excerpt":"Algoritmo Un algoritmo es un conjunto ordenado y finito de operaciones con el objetivo de realizar una actividad de pasos definidos y así encontrar una solución a cualquier problema la gran mayoría de veces (para mayor informacion puedes seguir este enlace). // Algoritmo para contribuir en un proyecto de código...","categories": [],
         "tags": [],
         "url": "/tutorial-python/conceptos-basicos/",
         "teaser": null
@@ -48,7 +48,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Estructuras de Control Condicionales",
-        "excerpt":"Definición   Las estructuras condicionales son aquellas que nos permiten evaluar si una o más condiciones se cumplen para decir que acción vamos a ejecutar. La evaluación de condiciones solo puede arrojar los resultados verdadero o falso (True o False).   En progreso…  ","categories": [],
+        "excerpt":"Definición   Las estructuras condicionales son aquellas que nos permiten evaluar si una o más condiciones se cumplen para decir que acción vamos a ejecutar. La evaluación de condiciones solo puede arrojar los resultados verdadero o falso (True o False).      En progreso…  ","categories": [],
         "tags": [],
         "url": "/tutorial-python/condicionales/",
         "teaser": null
@@ -60,7 +60,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Funciones",
-        "excerpt":"Definición   Una función es la forma de agrupar expresiones y sentencias (algoritmos) que realizan determinadas acciones, pero que estas solo se ejecutan cuando son llamadas.   En progreso…  ","categories": [],
+        "excerpt":"Definición Una función es la forma de agrupar expresiones y sentencias (algoritmos) que realizan determinadas acciones, pero que estas solo se ejecutan cuando son llamadas. Definiendo funciones Para definir funciones en Python se usa la palabra reservada def seguida del nombre de la función y la listas de parámetros formales...","categories": [],
         "tags": [],
         "url": "/tutorial-python/funciones/",
         "teaser": null
