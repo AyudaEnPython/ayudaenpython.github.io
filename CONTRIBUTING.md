@@ -27,7 +27,7 @@ todos los niveles).
 Queremos que toda solución sea legible para todos; por eso, te sugerimos y
 alentamos a seguir las siguientes notas:
 
-- De preferencia usa Python 3.7 o una versión superior.
+- De preferencia usa Python 3.6, 3.7 o una versión superior.
 - Usa nombres descriptivos, por ejemplo `usuarios = ['John', 'Jane']` en vez de `lista_usuarios = ['John', 'Jane']` (evita la redundancia).
 - Remueve y evita comentarios redundantes.
 - Se recomienda usar [f-strings](https://docs.python.org/es/3/tutorial/inputoutput.html#tut-f-strings) para mejorar la legibilidad.
