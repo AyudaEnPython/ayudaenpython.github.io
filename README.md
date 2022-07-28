@@ -1,4 +1,4 @@
-# Website de la comunidad AyudaEnPython
+# Sitio web de la comunidad AyudaEnPython
 
 Se parte de nuestra comunidad [AyudaEnPython](https://www.facebook.com/groups/ayudapython),
 nuestra finalidad es brindar apoyo a cualquier problema (principiante, intermedio, avanzado)
