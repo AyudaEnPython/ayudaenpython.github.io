@@ -1,0 +1,55 @@
+:root {
+    --max-height: 70vh;
+    --min-height-editor: 56vh;
+    --min-height-output: 16vh;
+    --max-font-size: 16px;
+    --min-font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+textarea {
+    font-family: "Source Code Pro", monospace;
+    font-size: var(--max-font-size);
+    width: 100%;
+    height: var(--max-height);
+}
+
+#output {
+    resize: both;
+    overflow: auto;
+    width: 100%;
+    height: var(--max-height);
+}
+
+#output::-webkit-scrollbar {
+    width: 8px;
+}
+
+#output::-webkit-scrollbar-thumb {
+    background-color: #bbccdd;
+}
+
+.CodeMirror {
+    resize: vertical;
+    font-family: "Source Code Pro", monospace;
+    font-size: var(--max-font-size);
+    height: var(--max-height);
+    width: 100%;
+}
+
+@media screen and (max-width: 765px){
+    #output {
+        height: var(--min-height-output);
+        font-size: var(--min-font-size);
+    }
+    .CodeMirror {
+        height: var(--min-height-editor);
+        font-size: var(--min-font-size);
+    }
+    .material-icons-outlined {
+        font-size: 16px;
+    }
+}

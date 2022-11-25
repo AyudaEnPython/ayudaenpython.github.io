@@ -66,7 +66,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Listas de Comprensión",
-        "excerpt":"En progreso…  ","categories": [],
+        "excerpt":"Las comprensiones de listas ofrecen una manera concisa de crear listas. Sus usos comunes son para hacer nuevas listas donde cada elemento es el resultado de algunas operaciones aplicadas a cada miembro de otra secuencia o iterable, o para crear un segmento de la secuencia de esos elementos para satisfacer...","categories": [],
         "tags": [],
         "url": "/tutoriales/listas-de-comprension/",
         "teaser": null
