@@ -66,7 +66,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Cómo realizar buenas preguntas",
-        "excerpt":"En progreso…    ","categories": [],
+        "excerpt":"Describe el problema y el contexto Un simple “alguien me puede ayudar?” no basta. Se más específico, brinda más detalles. Comparte tu código Evita compartir imágenes… porque: Las imágenes muestran un número limitado de líneas de código. Si las imágenes que compartes no tiene buena resolución, serán ilegibles. Si el...","categories": [],
         "tags": [],
         "url": "/tutoriales/preguntar/",
         "teaser": null
@@ -74,7 +74,7 @@ var store = [{
         "title": "Cómo brindar una mejor ayuda",
         "excerpt":"“Ayudar a otros en línea es dificil. Esperamos preguntas y discusiones técnicas, pero todos los involucrados son solo personas, así que no siempre sale bien”. 1 Si bien es cierto que no existen reglas de cómo ayudar a otros en línea, podemos seguir algunas pautas para lograr que la experiencia...","categories": [],
         "tags": [],
-        "url": "/tutoriales/preguntar/",
+        "url": "/tutoriales/ayudar/",
         "teaser": null
       },{
         "title": "F.A.Q.",
