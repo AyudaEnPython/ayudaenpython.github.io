@@ -65,6 +65,24 @@ var store = [{
         "url": "/tutorial-python/funciones/",
         "teaser": null
       },{
+        "title": "Cómo realizar buenas preguntas",
+        "excerpt":"En progreso…    ","categories": [],
+        "tags": [],
+        "url": "/tutoriales/preguntar/",
+        "teaser": null
+      },{
+        "title": "Cómo brindar una mejor ayuda",
+        "excerpt":"“Ayudar a otros en línea es dificil. Esperamos preguntas y discusiones técnicas, pero todos los involucrados son solo personas, así que no siempre sale bien”. 1 Si bien es cierto que no existen reglas de cómo ayudar a otros en línea, podemos seguir algunas pautas para lograr que la experiencia...","categories": [],
+        "tags": [],
+        "url": "/tutoriales/preguntar/",
+        "teaser": null
+      },{
+        "title": "F.A.Q.",
+        "excerpt":"En progreso…  ","categories": [],
+        "tags": [],
+        "url": "/tutoriales/faq/",
+        "teaser": null
+      },{
         "title": "Listas de Comprensión",
         "excerpt":"Las comprensiones de listas ofrecen una manera concisa de crear listas. Sus usos comunes son para hacer nuevas listas donde cada elemento es el resultado de algunas operaciones aplicadas a cada miembro de otra secuencia o iterable, o para crear un segmento de la secuencia de esos elementos para satisfacer...","categories": [],
         "tags": [],

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Funciones - AyudaEnPython</title>
-<meta name="description" content="funciones">
+<!-- begin _includes/seo.html --><title>F.A.Q. - AyudaEnPython</title>
+<meta name="description" content="Preguntas más frecuentes">
 
 
   <meta name="author" content="AyudaEnPython">
@@ -16,11 +16,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="AyudaEnPython">
-<meta property="og:title" content="Funciones">
-<meta property="og:url" content="/tutorial-python/funciones/">
+<meta property="og:title" content="F.A.Q.">
+<meta property="og:url" content="/tutoriales/faq/">
 
 
-  <meta property="og:description" content="funciones">
+  <meta property="og:description" content="Preguntas más frecuentes">
 
 
 
@@ -35,7 +35,7 @@
 
 
 
-<link rel="canonical" href="/tutorial-python/funciones/">
+<link rel="canonical" href="/tutoriales/faq/">
 
 
 
@@ -148,100 +148,11 @@
 
 <div id="main" role="main">
   
-  <div class="sidebar sticky">
-  
-  
-    
-      
-      
-      
-      
-    
-    
-      
-
-<nav class="nav__list">
-  
-  <input id="ac-toc" name="accordion-toc" type="checkbox" />
-  <label for="ac-toc">Alternar menú</label>
-  <ul class="nav__items">
-    
-      <li>
-        
-          <span class="nav__sub-title">Introducción</span>
-        
-
-        
-        <ul>
-          
-            <li><a href="/tutorial-python/introduccion/">Introducción</a></li>
-          
-            <li><a href="/tutorial-python/instalacion/">Instalación</a></li>
-          
-            <li><a href="/tutorial-python/conceptos-basicos/">Conceptos Básicos</a></li>
-          
-            <li><a href="/tutorial-python/sintaxis/">Sintaxis</a></li>
-          
-        </ul>
-        
-      </li>
-    
-      <li>
-        
-          <span class="nav__sub-title">Estructuras de datos</span>
-        
-
-        
-        <ul>
-          
-            <li><a href="/tutorial-python/estructuras-de-datos/">Estructura de datos</a></li>
-          
-        </ul>
-        
-      </li>
-    
-      <li>
-        
-          <span class="nav__sub-title">Estructuras de Control de Flujo</span>
-        
-
-        
-        <ul>
-          
-            <li><a href="/tutorial-python/condicionales/">Condicionales</a></li>
-          
-            <li><a href="/tutorial-python/iterativas/">Iterativas</a></li>
-          
-        </ul>
-        
-      </li>
-    
-      <li>
-        
-          <span class="nav__sub-title">Funciones</span>
-        
-
-        
-        <ul>
-          
-            <li><a href="/tutorial-python/funciones/" class="active">Funciones</a></li>
-          
-        </ul>
-        
-      </li>
-    
-  </ul>
-</nav>
-
-    
-  
-  </div>
-
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Funciones">
-    <meta itemprop="description" content="funciones">
+    <meta itemprop="headline" content="F.A.Q.">
+    <meta itemprop="description" content="Preguntas más frecuentes">
     <meta itemprop="datePublished" content="2023-09-02T04:49:27+00:00">
     
 
@@ -249,7 +160,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="/tutorial-python/funciones/" class="u-url" itemprop="url">Funciones
+            <a href="/tutoriales/faq/" class="u-url" itemprop="url">F.A.Q.
 </a>
           </h1>
           
@@ -263,65 +174,12 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-list"></i> Tabla de Contenidos</h4></header>
-              <ul class="toc__menu"><li><a href="#definición">Definición</a></li><li><a href="#definiendo-funciones">Definiendo funciones</a></li><li><a href="#documentación">Documentación</a></li><li><a href="#anotaciones">Anotaciones</a></li></ul>
+              
 
             </nav>
           </aside>
         
-        <h2 id="definición">Definición</h2>
-
-<p>Una función es la forma de agrupar expresiones y sentencias (algoritmos) que
-realizan determinadas acciones, pero que estas solo se ejecutan cuando son
-llamadas.</p>
-
-<h2 id="definiendo-funciones">Definiendo funciones</h2>
-
-<p>Para definir funciones en Python se usa la palabra reservada <code class="language-plaintext highlighter-rouge">def</code> seguida
-del nombre de la función y la listas de parámetros formales entre paréntesis:</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">saludar</span><span class="p">():</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"Hola"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>Un función con parámetros</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Hola </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s">!"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h2 id="documentación">Documentación</h2>
-
-<p>La primera línea debe ser siempre un resumen corto y conciso del propósito del
-objeto.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
-    <span class="s">"""Muestra en pantalla un mensaje de saludo.
-
-    :param nombre: Nombre de la persona a saludar
-    :nombre type: str
-    """</span>
-    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Hola </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s">!"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h2 id="anotaciones">Anotaciones</h2>
-
-<p>Las anotaciones de funciones son información completamente opcional sobre los
-tipos usadas en funciones definidas por el usuario (PEP 484 <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>)</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Hola </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s">!"</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p class="notice--danger">En progreso…</p>
-
-<hr />
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>https://www.python.org/dev/peps/pep-0484/ <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+        <p class="notice--danger">En progreso…</p>
 
         
       </section>
@@ -342,11 +200,12 @@ tipos usadas en funciones definidas por el usuario (PEP 484 <sup id="fnref:1" ro
       
   <nav class="pagination">
     
-      <a href="/tutorial-python/iterativas/" class="pagination--pager" title="Estructuras de Control Iterativas
+      <a href="/tutoriales/preguntar/" class="pagination--pager" title="Cómo brindar una mejor ayuda
 ">Anterior</a>
     
     
-      <a href="#" class="pagination--pager disabled">Siguiente</a>
+      <a href="/tutoriales/listas-de-comprension/" class="pagination--pager" title="Listas de Comprensión
+">Siguiente</a>
     
   </nav>
 
