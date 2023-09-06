@@ -1,0 +1,111 @@
+:root {
+    --max-height: 60vh;
+    --min-height-editor: 60vh;
+    --min-height-output: 20vh;
+    --max-font-size: 16px;
+    --min-font-size: 12px;
+    --charcoal: #231f20;
+    --white: rgb(229 231 235);
+}
+
+body {
+    background-image: 
+        repeating-linear-gradient(to right,var(--charcoal),var(--charcoal) 1px,transparent 1px,transparent 30px),
+        repeating-linear-gradient(to bottom,var(--charcoal),var(--charcoal) 1px,transparent 1px,transparent 30px);
+}
+
+h1 {
+    color: var(--charcoal);
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+textarea {
+    font-family: "Source Code Pro", monospace;
+    font-size: var(--max-font-size);
+    border-color: transparent;
+}
+
+.CodeMirror {
+    resize: vertical;
+    font-family: "Source Code Pro", monospace;
+    font-size: var(--max-font-size);
+    height: var(--max-height);
+}
+
+.dark .bg-gray-100 {
+    background-color: rgb(17 24 39);
+    color: #f9fafb;
+}
+
+.dark .bg-gray-300 {
+    background-color: rgb(55 65 81);
+    color: #f9fafb;
+}
+
+.dark #output {
+    color: var(--white);
+}
+
+body.dark-mode {
+    background-image:
+        repeating-linear-gradient(to right, var(--white), var(--white) 1px, transparent 1px, transparent 30px),
+        repeating-linear-gradient(to bottom, var(--white), var(--white) 1px, transparent 1px, transparent 30px);
+}
+
+body.default-mode {
+    background-image:
+        repeating-linear-gradient(to right,var(--charcoal),var(--charcoal) 1px,transparent 1px,transparent 30px),
+        repeating-linear-gradient(to bottom,var(--charcoal),var(--charcoal) 1px,transparent 1px,transparent 30px);
+}
+
+@media screen and (max-width: 765px){
+    textarea {
+        font-size: var(--min-font-size);
+    }
+    .CodeMirror {
+        height: var(--min-height-editor);
+        font-size: var(--min-font-size);
+    }
+    .material-icons-outlined {
+        font-size: 16px;
+    }
+}
+
+.ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #b1b1b1;
+    overflow: hidden;
+}
+.full-stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fde16d;
+}
+.empty-stars:before, .full-stars:before {
+    content:"\2605\2605\2605\2605\2605";
+    font-size: 14pt;
+}
+.empty-stars:before {
+    -webkit-text-stroke: 1px #848484;
+}
+.full-stars:before {
+    -webkit-text-stroke: 1px orange;
+}
+
+@media (max-width: 768px) {
+    span.material-symbols-outlined {
+        font-size: 14px;
+    }
+    #current-exercise {
+        font-size: 10px;
+    }
+}
