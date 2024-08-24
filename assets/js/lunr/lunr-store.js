@@ -88,4 +88,10 @@ var store = [{
         "tags": [],
         "url": "/tutoriales/listas-de-comprension/",
         "teaser": null
+      },{
+        "title": "Guía de Markdown",
+        "excerpt":"Encabezados Para crear un encabezado, agregar entre uno y seis símbolos # antes del encabezado del texto. El número de # que se utilice determirá el nivel jerárquico y el tamaño tipográfico del encabezado. Sintaxis: # Encabezado de primer nivel ## Encabezado de segundo nivel ### Encabezado de tercer nivel...","categories": [],
+        "tags": [],
+        "url": "/tutoriales/guia-de-markdown/",
+        "teaser": null
       }]

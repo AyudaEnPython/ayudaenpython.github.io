@@ -15,27 +15,19 @@ const editor = CodeMirror.fromTextArea(document.getElementById("code"), {
 editor.setOption("scrollbarStyle", "overlay");
 output.value = "...\n";
 
-document.addEventListener(
-    "keydown",
-    (e) => {
-        if (e.shiftKey && e.key == "Enter") {
-            e.preventDefault();
-            evaluatePy();
-        }
-    },
-    false
-);
-
-file_select.addEventListener(
-    "click",
-    (e) => {
-        if (file_elem) {
-            file_elem.click();
-        }
+document.addEventListener("keydown", (e) => {
+    if (e.shiftKey && e.key == "Enter") {
         e.preventDefault();
-    },
-    false
-);
+        evaluatePy();
+    }
+}, false);
+
+file_select.addEventListener("click", (e) => {
+    if (file_elem) {
+        file_elem.click();
+    }
+    e.preventDefault();
+}, false);
 
 function takeScreenshot() {
     const screenshot_target = document.getElementById("editor-zone");
