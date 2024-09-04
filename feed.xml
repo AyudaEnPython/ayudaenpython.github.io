@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-08-24T00:10:16+00:00</updated><id>/feed.xml</id><title type="html">AyudaEnPython</title><subtitle>Website de la comunidad AyudaEnPython dedicado a brinda artículos referentes a Python.</subtitle><author><name>AyudaEnPython</name></author><entry><title type="html">Python es de tipado dinámico y fuerte</title><link href="/tutoriales/tipado-dinamico-y-fuerte/" rel="alternate" type="text/html" title="Python es de tipado dinámico y fuerte" /><published>2022-03-02T00:00:00+00:00</published><updated>2022-03-02T00:00:00+00:00</updated><id>/tutoriales/tipado-dinamico-y-fuerte</id><content type="html" xml:base="/tutoriales/tipado-dinamico-y-fuerte/">&lt;p&gt;Python efectivamente es fuertemente tipado y dinámico a la vez, para ello
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-09-04T05:20:44+00:00</updated><id>/feed.xml</id><title type="html">AyudaEnPython</title><subtitle>Website de la comunidad AyudaEnPython dedicado a brinda artículos referentes a Python.</subtitle><author><name>AyudaEnPython</name></author><entry><title type="html">Python es de tipado dinámico y fuerte</title><link href="/articulos/tipado-dinamico-y-fuerte/" rel="alternate" type="text/html" title="Python es de tipado dinámico y fuerte" /><published>2022-03-02T00:00:00+00:00</published><updated>2022-03-02T00:00:00+00:00</updated><id>/articulos/tipado-dinamico-y-fuerte</id><content type="html" xml:base="/articulos/tipado-dinamico-y-fuerte/">&lt;p&gt;Python efectivamente es fuertemente tipado y dinámico a la vez, para ello
 vamos a analizarlo por partes:&lt;/p&gt;
 
 &lt;h2 id=&quot;tipado-dinámico&quot;&gt;Tipado dinámico&lt;/h2&gt;
@@ -35,6 +35,14 @@ haga una conversión. &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot
 &lt;span class=&quot;nb&quot;&gt;TypeError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unsupported&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;operand&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;int&apos;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;str&apos;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;Compruábalo tu mismo, ejecuta primero (arrojará un &lt;em&gt;TypeError&lt;/em&gt;) y luego modifícalo:&lt;/p&gt;
+
+&lt;script type=&quot;text/notebook-cell&quot; data-kernel=&quot;python&quot;&gt;
+x = 1
+y = &quot;2&quot;
+print(x + y)
+&lt;/script&gt;
+
 &lt;p&gt;Debido a ser fuertemente tipado, los tipos deben ser compatibles para realizar
 ciertas operaciones como por ejemplo la adicción (o concatenación).&lt;/p&gt;
 
@@ -60,12 +68,13 @@ ciertas operaciones como por ejemplo la adicción (o concatenación).&lt;/p&gt;
 de datos internamente (coerción) que resultan poco intuitivas y pueden convertirse en
 una fuente de errores:&lt;/p&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Output: 3&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Output: &quot;21&quot;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Output: &quot;111&quot;&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Output: 3&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Output: &quot;21&quot;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Output: &quot;111&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;hr /&gt;
+
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
@@ -75,7 +84,7 @@ una fuente de errores:&lt;/p&gt;
       &lt;p&gt;&lt;a href=&quot;https://es.wikipedia.org/wiki/Tipado_fuerte&quot;&gt;Wikipedia: Tipado fuerte&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>leugimkm</name></author><summary type="html">Explicación sobre el tipado de Python.</summary></entry><entry><title type="html">Bienvenidos a nuestro proyecto Ayuda en Python!</title><link href="/bienvenido/" rel="alternate" type="text/html" title="Bienvenidos a nuestro proyecto Ayuda en Python!" /><published>2022-03-01T00:00:00+00:00</published><updated>2022-03-01T00:00:00+00:00</updated><id>/bienvenido</id><content type="html" xml:base="/bienvenido/">&lt;h2 id=&quot;bienvenidos&quot;&gt;Bienvenidos&lt;/h2&gt;
+&lt;/div&gt;</content><author><name>leugimkm</name></author><summary type="html">Explicación sobre el tipado de Python.</summary></entry><entry><title type="html">Bienvenidos a nuestro proyecto Ayuda en Python!</title><link href="/articulos/bievenido/" rel="alternate" type="text/html" title="Bienvenidos a nuestro proyecto Ayuda en Python!" /><published>2022-03-01T00:00:00+00:00</published><updated>2022-03-01T00:00:00+00:00</updated><id>/articulos/bienvenido</id><content type="html" xml:base="/articulos/bievenido/">&lt;h2 id=&quot;bienvenidos&quot;&gt;Bienvenidos&lt;/h2&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;saludar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nombre&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;Saludo de bienvenida a los integrantes de la comunidad
@@ -108,8 +117,8 @@ sin esperar algo a cambio.&lt;/p&gt;
 &lt;p&gt;Realmente esperamos que todo los recursos presentes en nuestros diferentes
 canales sean de mucha utilidad para quien lo acceda.&lt;/p&gt;
 
-&lt;p class=&quot;notice--success&quot;&gt;&lt;em&gt;&lt;strong&gt;Recuerda:&lt;/strong&gt;&lt;/em&gt; Únete a nuestro &lt;a href=&quot;https://www.facebook.com/groups/ayudapython&quot; target=&quot;_blank&quot;&gt;grupo&lt;/a&gt;
-y trata de brindar todo el apoyo que puedas dar si ves que otro miembro de la 
+&lt;p class=&quot;notice--success&quot;&gt;&lt;em&gt;&lt;strong&gt;Recuerda:&lt;/strong&gt;&lt;/em&gt; Únete a nuestro &lt;a href=&quot;https://www.facebook.com/groups/ayudapython&quot; target=&quot;\_blank&quot;&gt;grupo&lt;/a&gt;
+y trata de brindar todo el apoyo que puedas dar si ves que otro miembro de la
 comunidad lo necesita. No importa el nivel que tengas, habrá oportunidad de darle
 la mano a alguien en algún momento.&lt;/p&gt;
 
@@ -117,7 +126,7 @@ la mano a alguien en algún momento.&lt;/p&gt;
 
 &lt;p&gt;Si compartes esas mismas ganas de ayudar y quieres empezar a contribuir en este
 proyecto, te invitamos a unirte a nuestro equipo, ve a nuestro
-&lt;a href=&quot;https://www.facebook.com/groups/ayudapython&quot; target=&quot;_blank&quot;&gt;grupo&lt;/a&gt; y ponte en contacto
+&lt;a href=&quot;https://www.facebook.com/groups/ayudapython&quot; target=&quot;\_blank&quot;&gt;grupo&lt;/a&gt; y ponte en contacto
 con nosotros (a través de una publicación, comentario o por mensaje interno
 a los administradores y/o moderadores).&lt;/p&gt;
 
@@ -132,6 +141,7 @@ a los administradores y/o moderadores).&lt;/p&gt;
   &lt;li&gt;&lt;em&gt;&lt;strong&gt;Practicantes&lt;/strong&gt;&lt;/em&gt; (oportunidad para aprender nuevas tecnologias)&lt;/li&gt;
 &lt;/ul&gt;
 
+
 &lt;/div&gt;
 
 &lt;p&gt;Te brindaremos todos los detalles de las tecnologías y herramientas que usamos
@@ -140,4 +150,4 @@ en este proyecto que día a día va creciendo.&lt;/p&gt;
 &lt;h2 id=&quot;reglas&quot;&gt;Reglas&lt;/h2&gt;
 
 &lt;p&gt;Puedes leer las reglas de nuestra comunidad en este
-&lt;a href=&quot;https://github.com/AyudaEnPython/AyudaEnPython#reglas-de-la-comunidad&quot; target=&quot;_blank&quot;&gt;enlace&lt;/a&gt;.&lt;/p&gt;</content><author><name>AyudaEnPython</name></author><summary type="html">Unas palabras de bienvenida y un simple saludo (en código) de parte nuestra.</summary></entry></feed>
+&lt;a href=&quot;https://github.com/AyudaEnPython/AyudaEnPython#reglas-de-la-comunidad&quot; target=&quot;\_blank&quot;&gt;enlace&lt;/a&gt;.&lt;/p&gt;</content><author><name>AyudaEnPython</name></author><summary type="html">Unas palabras de bienvenida y un simple saludo (en código) de parte nuestra.</summary></entry></feed>

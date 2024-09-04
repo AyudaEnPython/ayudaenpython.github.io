@@ -2,13 +2,13 @@ var store = [{
         "title": "Bienvenidos a nuestro proyecto Ayuda en Python!",
         "excerpt":"Bienvenidos def saludar(nombre: str) -&gt; str: \"\"\"Saludo de bienvenida a los integrantes de la comunidad 'Ayuda en Python'. :param nombre: Nombre de usuario :type nombre: str :return: Mensaje de bienvenida :rtype: str \"\"\" return f\"Hola {nombre.capitalize()}, \" \\ \"'Ayuda en Python' te da la bienvenida!\" if __name__ == \"__main__\": nombre...","categories": [],
         "tags": [],
-        "url": "/bienvenido/",
+        "url": "/articulos/bievenido/",
         "teaser": null
       },{
         "title": "Python es de tipado dinámico y fuerte",
         "excerpt":"Python efectivamente es fuertemente tipado y dinámico a la vez, para ello vamos a analizarlo por partes: Tipado dinámico Un lenguaje de programación usa un tipado dinámico cuando la comprobación de tipificación (typing) se realiza durante su ejecución y no en su compilación. 1 &gt;&gt;&gt; numero = 1 &gt;&gt;&gt; print(numero)...","categories": [],
         "tags": [],
-        "url": "/tutoriales/tipado-dinamico-y-fuerte/",
+        "url": "/articulos/tipado-dinamico-y-fuerte/",
         "teaser": null
       },{
         "title": "Generar números aleatorios",
