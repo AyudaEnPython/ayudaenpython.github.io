@@ -66,7 +66,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Cómo realizar buenas preguntas",
-        "excerpt":"Describe el problema y el contexto Un simple “alguien me puede ayudar?” no basta. Se más específico, brinda más detalles. Comparte tu código Evita compartir imágenes… porque: Las imágenes muestran un número limitado de líneas de código. Si las imágenes que compartes no tiene buena resolución, serán ilegibles. Si el...","categories": [],
+        "excerpt":"Antes de preguntar, intenta encontrar una respuesta: leyendo el manual, libro, tutorial y/o documentación. buscando en la web. preguntándole a un amigo(a) con más experiencia. Prepara tu pregunta y piensa en ella. Las preguntas precipitadas reciben respuestas precipitadas, o ni siquiera eso. Describe el problema y el contexto Un simple...","categories": [],
         "tags": [],
         "url": "/tutoriales/preguntar/",
         "teaser": null
