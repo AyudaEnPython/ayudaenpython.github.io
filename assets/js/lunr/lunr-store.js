@@ -24,7 +24,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Instalación",
-        "excerpt":"Instalación Instalar en Windows Primero seguir las instrucciones de instalación para Chocolatey (gestor de paquetes al estilo de apt-get): Nota: Copiar y ejecutar el siguiente comando en PowerShell Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1')) Una vez instaldo Chocolatey, instalar Python es sencillo: choco...","categories": [],
+        "excerpt":"Windows Chocolatey es un gestor de paquetes para Windows (similar a ‘apt’ de Debian/Ubuntu) que permite instalar, actualizar y gestionar software desde la línea de comandos utilizando scripts automatizados. Para instalar chocolatey, abrir Windows PowerShell con privilegios de administrador, copiar y pegar el siguiente comando en PowerShell y presionar la...","categories": [],
         "tags": [],
         "url": "/tutorial-python/instalacion/",
         "teaser": null
@@ -78,7 +78,7 @@ var store = [{
         "teaser": null
       },{
         "title": "F.A.Q.",
-        "excerpt":"En progreso…  ","categories": [],
+        "excerpt":"¿Qué es Python y para qué se utiliza? Python es un lenguaje de programación de alto nivel, interpretado y de propósito general. Se utiliza en una variedad de aplicaciones, incluyendo desarrollo web, análisis de datos, inteligencia artificial, automatización de tareas y más. ¿Cómo se instala Python en mi computadora? Puedes...","categories": [],
         "tags": [],
         "url": "/tutoriales/faq/",
         "teaser": null
