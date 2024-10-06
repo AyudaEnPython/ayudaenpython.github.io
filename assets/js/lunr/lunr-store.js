@@ -94,4 +94,10 @@ var store = [{
         "tags": [],
         "url": "/tutoriales/guia-de-markdown/",
         "teaser": null
+      },{
+        "title": "Guía de estilo para código Python - PEP8",
+        "excerpt":"Introducción Este documento1 brinda las convenciones de escritura de código Python abarcando la biblioteca estándar en la distribución principal de Python. Disposición del código Indentación Usa 4 espacios por cada nivel de indentación. ¿Tabulaciones o espacios? Los espacios son el método preferido de indentación. Python rechaza la mezcla de tabulaciones...","categories": [],
+        "tags": [],
+        "url": "/tutoriales/pep8/",
+        "teaser": null
       }]

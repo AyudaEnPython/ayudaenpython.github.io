@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Funciones | AyudaEnPython</title>
-<meta name="description" content="funciones">
+<!-- begin _includes/seo.html --><title>Guía de estilo para código Python - PEP8 | AyudaEnPython</title>
+<meta name="description" content="Como aplicar la guía de estilo a nuestro código">
 
 
   <meta name="author" content="AyudaEnPython">
@@ -16,11 +16,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="AyudaEnPython">
-<meta property="og:title" content="Funciones">
-<meta property="og:url" content="/tutorial-python/funciones/">
+<meta property="og:title" content="Guía de estilo para código Python - PEP8">
+<meta property="og:url" content="/tutoriales/pep8/">
 
 
-  <meta property="og:description" content="funciones">
+  <meta property="og:description" content="Como aplicar la guía de estilo a nuestro código">
 
 
 
@@ -37,7 +37,7 @@
 
 
 
-<link rel="canonical" href="/tutorial-python/funciones/">
+<link rel="canonical" href="/tutoriales/pep8/">
 
 
 
@@ -173,101 +173,11 @@
 
 <div id="main" role="main">
   
-  <div class="sidebar sticky">
-  
-  
-    
-      
-      
-      
-      
-    
-    
-      <nav class="nav__list">
-  
-  <input id="ac-toc" name="accordion-toc" type="checkbox" />
-  <label for="ac-toc">Alternar menú</label>
-  <ul class="nav__items">
-    
-      
-      
-        <li>
-          
-            <span class="nav__sub-title">Introducción</span>
-          
-
-          
-          <ul>
-            
-              <li><a href="/tutorial-python/introduccion/">Introducción</a></li>
-            
-              <li><a href="/tutorial-python/instalacion/">Instalación</a></li>
-            
-              <li><a href="/tutorial-python/conceptos-basicos/">Conceptos Básicos</a></li>
-            
-              <li><a href="/tutorial-python/sintaxis/">Sintaxis</a></li>
-            
-          </ul>
-          
-        </li>
-      
-        <li>
-          
-            <span class="nav__sub-title">Estructuras de datos</span>
-          
-
-          
-          <ul>
-            
-              <li><a href="/tutorial-python/estructuras-de-datos/">Estructura de datos</a></li>
-            
-          </ul>
-          
-        </li>
-      
-        <li>
-          
-            <span class="nav__sub-title">Estructuras de Control de Flujo</span>
-          
-
-          
-          <ul>
-            
-              <li><a href="/tutorial-python/condicionales/">Condicionales</a></li>
-            
-              <li><a href="/tutorial-python/iterativas/">Iterativas</a></li>
-            
-          </ul>
-          
-        </li>
-      
-        <li>
-          
-            <span class="nav__sub-title">Funciones</span>
-          
-
-          
-          <ul>
-            
-              <li><a href="/tutorial-python/funciones/" class="active">Funciones</a></li>
-            
-          </ul>
-          
-        </li>
-      
-    
-  </ul>
-</nav>
-
-    
-  
-  </div>
-
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Funciones">
-    <meta itemprop="description" content="funciones">
+    <meta itemprop="headline" content="Guía de estilo para código Python - PEP8">
+    <meta itemprop="description" content="Como aplicar la guía de estilo a nuestro código">
     <meta itemprop="datePublished" content="2024-10-06T22:05:53+00:00">
     
 
@@ -275,7 +185,7 @@
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="/tutorial-python/funciones/" itemprop="url">Funciones
+            <a href="/tutoriales/pep8/" itemprop="url">Guía de estilo para código Python - PEP8
 </a>
           </h1>
           
@@ -289,62 +199,115 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-list"></i> Tabla de Contenidos</h4></header>
-              <ul class="toc__menu"><li><a href="#definición">Definición</a></li><li><a href="#definiendo-funciones">Definiendo funciones</a></li><li><a href="#documentación">Documentación</a></li><li><a href="#anotaciones">Anotaciones</a></li></ul>
+              <ul class="toc__menu"><li><a href="#introducción">Introducción</a></li><li><a href="#disposición-del-código">Disposición del código</a><ul><li><a href="#indentación">Indentación</a></li><li><a href="#tabulaciones-o-espacios">¿Tabulaciones o espacios?</a></li><li><a href="#longitud-máxima-de-línea">Longitud máxima de línea</a></li><li><a href="#debería-saltar-de-línea-antes-o-después-de-un-operador">Debería saltar de línea antes o después de un operador?</a></li><li><a href="#líneas-en-blanco">Líneas en blanco</a></li><li><a href="#codificación-de-ficheros">Codificación de ficheros</a></li><li><a href="#importaciones">Importaciones</a></li><li><a href="#nivel-de-módulo-de-nombre-dunder">Nivel de módulo de nombre dunder</a></li></ul></li><li><a href="#comillas-en-cadenas-de-caracteres">Comillas en cadenas de caracteres</a></li></ul>
             </nav>
           </aside>
         
-        <h2 id="definición">Definición</h2>
+        <h2 id="introducción">Introducción</h2>
 
-<p>Una función es la forma de agrupar expresiones y sentencias (algoritmos) que
-realizan determinadas acciones, pero que estas solo se ejecutan cuando son
-llamadas.</p>
+<p>Este documento<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> brinda las convenciones de escritura de código Python
+abarcando la biblioteca estándar en la distribución principal de Python.</p>
 
-<h2 id="definiendo-funciones">Definiendo funciones</h2>
+<h2 id="disposición-del-código">Disposición del código</h2>
 
-<p>Para definir funciones en Python se usa la palabra reservada <code class="language-plaintext highlighter-rouge">def</code> seguida
-del nombre de la función y la listas de parámetros formales entre paréntesis:</p>
+<h3 id="indentación">Indentación</h3>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">saludar</span><span class="p">():</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">"Hola"</span><span class="p">)</span>
+<p>Usa 4 espacios por cada nivel de indentación.</p>
+
+<h3 id="tabulaciones-o-espacios">¿Tabulaciones o espacios?</h3>
+
+<p>Los espacios son el método preferido de indentación.</p>
+
+<p>Python rechaza la mezcla de tabulaciones con espacios para la indentación.</p>
+
+<h3 id="longitud-máxima-de-línea">Longitud máxima de línea</h3>
+
+<p>Limita todas las líneas a un máximo de 79 caracteres.</p>
+
+<h3 id="debería-saltar-de-línea-antes-o-después-de-un-operador">Debería saltar de línea antes o después de un operador?</h3>
+
+<p>Lo recomendado es usar el operador al principio de cada línea.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">income</span> <span class="o">=</span> <span class="p">(</span><span class="n">gross_wages</span>
+          <span class="o">+</span> <span class="n">taxable_interest</span>
+          <span class="o">+</span> <span class="p">(</span><span class="n">dividends</span> <span class="o">-</span> <span class="n">qualified_dividends</span><span class="p">)</span>
+          <span class="o">-</span> <span class="n">ira_deduction</span>
+          <span class="o">-</span> <span class="n">student_loan_interest</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>Un función con parámetros</p>
+<h3 id="líneas-en-blanco">Líneas en blanco</h3>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Hola </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s">!"</span><span class="p">)</span>
+<p>Rodear las definiciones de funciones y clases con dos líneas en blanco.</p>
+
+<p>Las definiciones de métodos dentro de una clase son rodeadas por una línea
+en blanco.</p>
+
+<h3 id="codificación-de-ficheros">Codificación de ficheros</h3>
+
+<p>El código de en la distribución central de Python siempre debe usar UTF-8.</p>
+
+<h3 id="importaciones">Importaciones</h3>
+
+<p>Las importaciones usualmente deben estar en líneas separadas</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Correcto:
+</span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
 </code></pre></div></div>
 
-<h2 id="documentación">Documentación</h2>
-
-<p>La primera línea debe ser siempre un resumen corto y conciso del propósito del
-objeto.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
-    <span class="s">"""Muestra en pantalla un mensaje de saludo.
-
-    :param nombre: Nombre de la persona a saludar
-    :nombre type: str
-    """</span>
-    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Hola </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s">!"</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Incorrecto:
+</span><span class="kn">import</span> <span class="nn">os</span><span class="p">,</span> <span class="n">sys</span>
 </code></pre></div></div>
 
-<h2 id="anotaciones">Anotaciones</h2>
+<p>Sin embargo, lo siguiente es correcto:</p>
 
-<p>Las anotaciones de funciones son información completamente opcional sobre los
-tipos usadas en funciones definidas por el usuario (PEP 484 <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>)</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="bp">None</span><span class="p">:</span>
-    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Hola </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s">!"</span><span class="p">)</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Correcto:
+</span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">Popen</span><span class="p">,</span> <span class="n">PIPE</span>
 </code></pre></div></div>
 
-<p class="notice--danger">En progreso…</p>
+<h3 id="nivel-de-módulo-de-nombre-dunder">Nivel de módulo de nombre <em>dunder</em></h3>
+
+<p>Loa niveles de modulo de nombre <em>dunder</em> tales como <code class="language-plaintext highlighter-rouge">__all__</code>, <code class="language-plaintext highlighter-rouge">__author__</code>,
+<code class="language-plaintext highlighter-rouge">__version__</code>, etc. deben colocarse después de la documentación del módulo
+pero antes de cualquier declaración de importación excepto de <code class="language-plaintext highlighter-rouge">from __future__</code>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">"""This is the example module.
+
+This module does stuff.
+"""</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">barry_as_FLUFL</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">]</span>
+<span class="n">__version__</span> <span class="o">=</span> <span class="s">'0.1'</span>
+<span class="n">__author__</span> <span class="o">=</span> <span class="s">'Cardinal Biggles'</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+</code></pre></div></div>
+
+<h2 id="comillas-en-cadenas-de-caracteres">Comillas en cadenas de caracteres</h2>
+
+<p>En Python, las cadenas de caracteres entre comillas simples (<code class="language-plaintext highlighter-rouge">'</code>) o dobles (<code class="language-plaintext highlighter-rouge">"</code>)
+son lo mismo. Este PEP no hace ninguna recomendación al respecto.
+Elija una regla y cúmplala.
+Sin embargo, cuando una cadena contiene comillas simples o dobles, utilice la
+otra para evitar barras invertidas en la cadena. Mejora la legibilidad.</p>
+
+<p>Para cadenas entre comillas triples, utilice siempre comillas dobles para ser
+coherente con la convención de cadena de documentos en PEP 257<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
+
+<p class="notice--primary">En progreso…</p>
 
 <hr />
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1" role="doc-endnote">
-      <p><a href="https://www.python.org/dev/peps/pep-0484/">https://www.python.org/dev/peps/pep-0484/</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p><a href="https://peps.python.org/pep-0008/">PEP 8</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://peps.python.org/pep-0257/">PEP 257</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -368,7 +331,7 @@ tipos usadas en funciones definidas por el usuario (PEP 484 <sup id="fnref:1" ro
       
   <nav class="pagination">
     
-      <a href="/tutorial-python/iterativas/" class="pagination--pager" title="Estructuras de Control Iterativas
+      <a href="/tutoriales/guia-de-markdown/" class="pagination--pager" title="Guía de Markdown
 ">Anterior</a>
     
     
