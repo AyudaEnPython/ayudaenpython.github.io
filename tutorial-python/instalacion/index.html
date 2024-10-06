@@ -30,7 +30,7 @@
 
 
 
-  <meta property="article:published_time" content="2024-09-11T04:36:53+00:00">
+  <meta property="article:published_time" content="2024-10-06T19:04:00+00:00">
 
 
 
@@ -268,7 +268,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Instalación">
     <meta itemprop="description" content="Instalación de Python en Windows, Linux y MacOS.">
-    <meta itemprop="datePublished" content="2024-09-11T04:36:53+00:00">
+    <meta itemprop="datePublished" content="2024-10-06T19:04:00+00:00">
     
 
     <div class="page__inner-wrap">
@@ -289,13 +289,13 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-list"></i> Tabla de Contenidos</h4></header>
-              <ul class="toc__menu"><li><a href="#windows">Windows</a></li><li><a href="#linux-distro">Linux Distro</a><ul><li><a href="#debianubuntu">Debian/Ubuntu</a></li><li><a href="#fedora">Fedora</a></li><li><a href="#arch">Arch</a></li></ul></li><li><a href="#macos">macOS</a></li></ul>
+              <ul class="toc__menu"><li><a href="#windows">Windows</a></li><li><a href="#macos">macOS</a></li><li><a href="#linux-distro">Linux Distro</a><ul><li><a href="#debianubuntu">Debian/Ubuntu</a></li><li><a href="#fedora">Fedora</a></li><li><a href="#arch">Arch</a></li></ul></li></ul>
             </nav>
           </aside>
         
         <h2 id="windows">Windows</h2>
 
-<p><em>Chocolatey</em> es un gestor de paquetes para Windows (similar a ‘apt’ de Debian/Ubuntu)
+<p><em>Chocolatey</em><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> es un gestor de paquetes para Windows (similar a ‘apt’ de Debian/Ubuntu)
 que permite instalar, actualizar y gestionar software desde la línea de comandos
 utilizando scripts automatizados.</p>
 
@@ -312,6 +312,24 @@ Una vez instalado <code class="language-plaintext highlighter-rouge">chocolatey<
 </code></pre></div></div>
 
 <p class="notice">Puedes seguir las instrucciones de instalación en la página de <a href="https://chocolatey.org/install">Chocolatey</a></p>
+
+<h2 id="macos">macOS</h2>
+
+<p>Antes de instalar Python, se necesita instalar GCC. GCC puede ser obtenido descargando Xcode,
+Command Line Tools o el paquete OSX-GCC-Installer.</p>
+
+<p>Para instalar <em>Homebrew</em><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> (gestor de paquetes), abrir el terminal y ejecutar:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"/usr/local/opt/python/libexec/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p>Por último:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>python
+</code></pre></div></div>
 
 <h2 id="linux-distro">Linux Distro</h2>
 
@@ -333,23 +351,18 @@ Una vez instalado <code class="language-plaintext highlighter-rouge">chocolatey<
 <span class="nb">sudo </span>pacman <span class="nt">-S</span> python
 </code></pre></div></div>
 
-<h2 id="macos">macOS</h2>
+<hr />
 
-<p>Antes de instalar Python, se necesita instalar GCC. GCC puede ser obtenido descargando Xcode,
-Command Line Tools o el paquete OSX-GCC-Installer.</p>
-
-<p>Para instalar <code class="language-plaintext highlighter-rouge">homebrew</code> (gestor de paquetes), abrir el terminal y ejecutar:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/bin/bash <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="si">)</span><span class="s2">"</span>
-</code></pre></div></div>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"/usr/local/opt/python/libexec/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
-</code></pre></div></div>
-
-<p>Por último:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>python
-</code></pre></div></div>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://chocolatey.org">Chocolatey</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://brew.sh/">Homebrew</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
         
       </section>
@@ -361,7 +374,7 @@ Command Line Tools o el paquete OSX-GCC-Installer.</p>
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time class="dt-published" datetime="2024-09-11T04:36:53+00:00">September 11, 2024</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time class="dt-published" datetime="2024-10-06T19:04:00+00:00">October 6, 2024</time></p>
 
       </footer>
 

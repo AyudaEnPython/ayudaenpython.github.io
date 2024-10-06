@@ -24,13 +24,13 @@ var store = [{
         "teaser": null
       },{
         "title": "Instalación",
-        "excerpt":"Windows Chocolatey es un gestor de paquetes para Windows (similar a ‘apt’ de Debian/Ubuntu) que permite instalar, actualizar y gestionar software desde la línea de comandos utilizando scripts automatizados. Para instalar chocolatey, abrir Windows PowerShell con privilegios de administrador, copiar y pegar el siguiente comando en PowerShell y presionar la...","categories": [],
+        "excerpt":"Windows Chocolatey1 es un gestor de paquetes para Windows (similar a ‘apt’ de Debian/Ubuntu) que permite instalar, actualizar y gestionar software desde la línea de comandos utilizando scripts automatizados. Para instalar chocolatey, abrir Windows PowerShell con privilegios de administrador, copiar y pegar el siguiente comando en PowerShell y presionar la...","categories": [],
         "tags": [],
         "url": "/tutorial-python/instalacion/",
         "teaser": null
       },{
         "title": "Conceptos Básicos",
-        "excerpt":"Algoritmo Un algoritmo es un conjunto ordenado y finito de operaciones con el objetivo de realizar una actividad de pasos definidos y así encontrar una solución a cualquier problema la gran mayoría de veces (para mayor informacion puedes seguir este enlace). // Algoritmo para contribuir en un proyecto de código...","categories": [],
+        "excerpt":"Algoritmo Un algoritmo es un conjunto ordenado y finito de operaciones con el objetivo de realizar una actividad de pasos definidos y así encontrar una solución a cualquier problema la gran mayoría de veces (para mayor información puedes seguir este enlace). // Algoritmo para contribuir en un proyecto de código...","categories": [],
         "tags": [],
         "url": "/tutorial-python/conceptos-basicos/",
         "teaser": null
@@ -72,7 +72,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Cómo brindar una mejor ayuda",
-        "excerpt":"“Ayudar a otros en línea es dificil. Esperamos preguntas y discusiones técnicas, pero todos los involucrados son solo personas, así que no siempre sale bien”. 1 Si bien es cierto que no existen reglas de cómo ayudar a otros en línea, podemos seguir algunas pautas para lograr que la experiencia...","categories": [],
+        "excerpt":"“Ayudar a otros en línea es difícil. Esperamos preguntas y discusiones técnicas, pero todos los involucrados son solo personas, así que no siempre sale bien”. 1 Si bien es cierto que no existen reglas de cómo ayudar a otros en línea, podemos seguir algunas pautas para lograr que la experiencia...","categories": [],
         "tags": [],
         "url": "/tutoriales/ayudar/",
         "teaser": null
@@ -90,7 +90,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Guía de Markdown",
-        "excerpt":"Encabezados Para crear un encabezado, agregar entre uno y seis símbolos # antes del encabezado del texto. El número de # que se utilice determirá el nivel jerárquico y el tamaño tipográfico del encabezado. Sintaxis: # Encabezado de primer nivel ## Encabezado de segundo nivel ### Encabezado de tercer nivel...","categories": [],
+        "excerpt":"Encabezados Para crear un encabezado, agregar entre uno y seis símbolos # antes del encabezado del texto. El número de # que se utilice determinará el nivel jerárquico y el tamaño tipográfico del encabezado. Sintaxis: # Encabezado de primer nivel ## Encabezado de segundo nivel ### Encabezado de tercer nivel...","categories": [],
         "tags": [],
         "url": "/tutoriales/guia-de-markdown/",
         "teaser": null

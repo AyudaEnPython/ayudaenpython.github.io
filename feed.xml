@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-09-11T04:36:53+00:00</updated><id>/feed.xml</id><title type="html">AyudaEnPython</title><subtitle>Website de la comunidad AyudaEnPython dedicado a brinda artículos referentes a Python.</subtitle><author><name>AyudaEnPython</name></author><entry><title type="html">Python es de tipado dinámico y fuerte</title><link href="/articulos/tipado-dinamico-y-fuerte/" rel="alternate" type="text/html" title="Python es de tipado dinámico y fuerte" /><published>2022-03-02T00:00:00+00:00</published><updated>2022-03-02T00:00:00+00:00</updated><id>/articulos/tipado-dinamico-y-fuerte</id><content type="html" xml:base="/articulos/tipado-dinamico-y-fuerte/">&lt;p&gt;Python efectivamente es fuertemente tipado y dinámico a la vez, para ello
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-10-06T19:04:00+00:00</updated><id>/feed.xml</id><title type="html">AyudaEnPython</title><subtitle>Website de la comunidad AyudaEnPython dedicado a brinda artículos referentes a Python.</subtitle><author><name>AyudaEnPython</name></author><entry><title type="html">Python es de tipado dinámico y fuerte</title><link href="/articulos/tipado-dinamico-y-fuerte/" rel="alternate" type="text/html" title="Python es de tipado dinámico y fuerte" /><published>2022-03-02T00:00:00+00:00</published><updated>2022-03-02T00:00:00+00:00</updated><id>/articulos/tipado-dinamico-y-fuerte</id><content type="html" xml:base="/articulos/tipado-dinamico-y-fuerte/">&lt;p&gt;Python efectivamente es fuertemente tipado y dinámico a la vez, para ello
 vamos a analizarlo por partes:&lt;/p&gt;
 
 &lt;h2 id=&quot;tipado-dinámico&quot;&gt;Tipado dinámico&lt;/h2&gt;
@@ -35,7 +35,7 @@ haga una conversión. &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot
 &lt;span class=&quot;nb&quot;&gt;TypeError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;unsupported&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;operand&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;int&apos;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;str&apos;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Compruábalo tu mismo, ejecuta primero (arrojará un &lt;em&gt;TypeError&lt;/em&gt;) y luego modifícalo:&lt;/p&gt;
+&lt;p&gt;Compruébalo tu mismo, ejecuta primero (arrojará un &lt;em&gt;TypeError&lt;/em&gt;) y luego modifícalo:&lt;/p&gt;
 
 &lt;script type=&quot;text/notebook-cell&quot; data-kernel=&quot;python&quot;&gt;
 x = 1
@@ -110,7 +110,7 @@ crecimiento como programador.&lt;/p&gt;
 
 &lt;p&gt;Queremos resaltar que en nuestro tiempo libre, contribuimos todo lo que
 podemos ayudando a programadores de Python de una u otra manera sin esperar
-retribución económica alguna, no es nuestra finalidad ni próposito a futuro;
+retribución económica alguna, no es nuestra finalidad ni propósito a futuro;
 simplemente son las ganas de darle la mano a alguien cuando lo necesita
 sin esperar algo a cambio.&lt;/p&gt;
 
@@ -138,7 +138,7 @@ a los administradores y/o moderadores).&lt;/p&gt;
   &lt;li&gt;&lt;em&gt;&lt;strong&gt;Moderadores&lt;/strong&gt;&lt;/em&gt; y &lt;em&gt;&lt;strong&gt;Administradores&lt;/strong&gt;&lt;/em&gt; (para nuestro grupo en Facebook)&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;&lt;strong&gt;Colaboradores&lt;/strong&gt;&lt;/em&gt; (cualquier aporte es valioso)&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;&lt;strong&gt;Redactores&lt;/strong&gt;&lt;/em&gt; (te gustaría escribir un tutorial o artículo?)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;&lt;strong&gt;Practicantes&lt;/strong&gt;&lt;/em&gt; (oportunidad para aprender nuevas tecnologias)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;&lt;strong&gt;Practicantes&lt;/strong&gt;&lt;/em&gt; (oportunidad para aprender nuevas tecnologías)&lt;/li&gt;
 &lt;/ul&gt;
 
 
