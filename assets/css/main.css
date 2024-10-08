@@ -1297,8 +1297,15 @@ body { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 10
   .page__hero-caption a { color: #000 !important; }
   /* Hide the following elements on print ========================================================================== */
   .masthead, .toc, .page__share, .page__related, .pagination, .ads, .page__footer, .page__comments-form, .author__avatar, .author__content, .author__urls-wrapper, .nav__list, .sidebar, .adsbygoogle { display: none !important; height: 1px !important; } }
+/* sans serif typefaces */
+/* serif typefaces */
 .greedy-nav { color: #333; background-color: #ffde59; }
 
 .greedy-nav a { color: #333; font-weight: bold; background-color: #ffde59; }
 
 .masthead { color: #333; background-color: #ffde59; }
+
+html { font-size: 16px; }
+@media (min-width: 48em) { html { font-size: 16px; } }
+@media (min-width: 64em) { html { font-size: 18px; } }
+@media (min-width: 80em) { html { font-size: 20px; } }
