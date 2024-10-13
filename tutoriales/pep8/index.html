@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Guía de estilo para código Python - PEP8 | AyudaEnPython</title>
+<meta name="description" content="Como aplicar la guía de estilo a nuestro código">
+
+
+  <meta name="author" content="AyudaEnPython">
+  
+  <meta property="article:author" content="AyudaEnPython">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="AyudaEnPython">
+<meta property="og:title" content="Guía de estilo para código Python - PEP8">
+<meta property="og:url" content="/tutoriales/pep8/">
+
+
+  <meta property="og:description" content="Como aplicar la guía de estilo a nuestro código">
+
+
+
+  <meta property="og:image" content="/assets/images/site-logo.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2024-10-13T04:26:23+00:00">
+
+
+
+
+
+
+<link rel="canonical" href="/tutoriales/pep8/">
+
+
+
+
+
+
+
+  <meta name="google-site-verification" content="IQEKfQ9ena-yQnt-pfeq3LJz7XFNGBEn7-I_Nqa5Rlg" />
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="AyudaEnPython Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script type="text/javascript">
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<link
+  rel="shortcout icon"
+  type="image/x-icon"
+  href="/assets/images/favicon.ico"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/blog-cells@0.7.1/dist/blog-cells.css"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic"
+  rel="stylesheet"
+  type="text/css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/blog-cells@0.7.1/dist/blog-cells.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- end custom head snippets -->
+
+  </head>
+  
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Saltar a navegación principal</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Saltar a contenido</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Saltar a pie</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/nav_logo.png" alt=" "></a>
+        
+        <a class="site-title" href="/">
+           
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/articulos/"
+                
+                
+              >Artículos</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/tutoriales/"
+                
+                
+              >Tutoriales</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/revisiones/"
+                
+                
+              >Revisiones</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/ide/"
+                
+                
+              >Online IDE</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/retos/"
+                
+                
+              >Retos</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >Nosotros</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Alternar búsqueda</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Alternar menú</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Guía de estilo para código Python - PEP8">
+    <meta itemprop="description" content="Como aplicar la guía de estilo a nuestro código">
+    <meta itemprop="datePublished" content="2024-10-13T04:26:23+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="/tutoriales/pep8/" itemprop="url">Guía de estilo para código Python - PEP8
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-list"></i> Tabla de Contenidos</h4></header>
+              <ul class="toc__menu"><li><a href="#introducción">Introducción</a></li><li><a href="#disposición-del-código">Disposición del código</a><ul><li><a href="#indentación">Indentación</a></li><li><a href="#tabulaciones-o-espacios">¿Tabulaciones o espacios?</a></li><li><a href="#longitud-máxima-de-línea">Longitud máxima de línea</a></li><li><a href="#debería-saltar-de-línea-antes-o-después-de-un-operador">Debería saltar de línea antes o después de un operador?</a></li><li><a href="#líneas-en-blanco">Líneas en blanco</a></li><li><a href="#codificación-de-ficheros">Codificación de ficheros</a></li><li><a href="#importaciones">Importaciones</a></li><li><a href="#nivel-de-módulo-de-nombre-dunder">Nivel de módulo de nombre dunder</a></li></ul></li><li><a href="#comillas-en-cadenas-de-caracteres">Comillas en cadenas de caracteres</a></li></ul>
+            </nav>
+          </aside>
+        
+        <h2 id="introducción">Introducción</h2>
+
+<p>Este documento<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> brinda las convenciones de escritura de código Python
+abarcando la biblioteca estándar en la distribución principal de Python.</p>
+
+<h2 id="disposición-del-código">Disposición del código</h2>
+
+<h3 id="indentación">Indentación</h3>
+
+<p>Usa 4 espacios por cada nivel de indentación.</p>
+
+<h3 id="tabulaciones-o-espacios">¿Tabulaciones o espacios?</h3>
+
+<p>Los espacios son el método preferido de indentación.</p>
+
+<p>Python rechaza la mezcla de tabulaciones con espacios para la indentación.</p>
+
+<h3 id="longitud-máxima-de-línea">Longitud máxima de línea</h3>
+
+<p>Limita todas las líneas a un máximo de 79 caracteres.</p>
+
+<h3 id="debería-saltar-de-línea-antes-o-después-de-un-operador">Debería saltar de línea antes o después de un operador?</h3>
+
+<p>Lo recomendado es usar el operador al principio de cada línea.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">income</span> <span class="o">=</span> <span class="p">(</span><span class="n">gross_wages</span>
+          <span class="o">+</span> <span class="n">taxable_interest</span>
+          <span class="o">+</span> <span class="p">(</span><span class="n">dividends</span> <span class="o">-</span> <span class="n">qualified_dividends</span><span class="p">)</span>
+          <span class="o">-</span> <span class="n">ira_deduction</span>
+          <span class="o">-</span> <span class="n">student_loan_interest</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="líneas-en-blanco">Líneas en blanco</h3>
+
+<p>Rodear las definiciones de funciones y clases con dos líneas en blanco.</p>
+
+<p>Las definiciones de métodos dentro de una clase son rodeadas por una línea
+en blanco.</p>
+
+<h3 id="codificación-de-ficheros">Codificación de ficheros</h3>
+
+<p>El código de en la distribución central de Python siempre debe usar UTF-8.</p>
+
+<h3 id="importaciones">Importaciones</h3>
+
+<p>Las importaciones usualmente deben estar en líneas separadas</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Correcto:
+</span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Incorrecto:
+</span><span class="kn">import</span> <span class="nn">os</span><span class="p">,</span> <span class="n">sys</span>
+</code></pre></div></div>
+
+<p>Sin embargo, lo siguiente es correcto:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Correcto:
+</span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">Popen</span><span class="p">,</span> <span class="n">PIPE</span>
+</code></pre></div></div>
+
+<h3 id="nivel-de-módulo-de-nombre-dunder">Nivel de módulo de nombre <em>dunder</em></h3>
+
+<p>Loa niveles de modulo de nombre <em>dunder</em> tales como <code class="language-plaintext highlighter-rouge">__all__</code>, <code class="language-plaintext highlighter-rouge">__author__</code>,
+<code class="language-plaintext highlighter-rouge">__version__</code>, etc. deben colocarse después de la documentación del módulo
+pero antes de cualquier declaración de importación excepto de <code class="language-plaintext highlighter-rouge">from __future__</code>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">"""This is the example module.
+
+This module does stuff.
+"""</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">barry_as_FLUFL</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">]</span>
+<span class="n">__version__</span> <span class="o">=</span> <span class="s">'0.1'</span>
+<span class="n">__author__</span> <span class="o">=</span> <span class="s">'Cardinal Biggles'</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+</code></pre></div></div>
+
+<h2 id="comillas-en-cadenas-de-caracteres">Comillas en cadenas de caracteres</h2>
+
+<p>En Python, las cadenas de caracteres entre comillas simples (<code class="language-plaintext highlighter-rouge">'</code>) o dobles (<code class="language-plaintext highlighter-rouge">"</code>)
+son lo mismo. Este PEP no hace ninguna recomendación al respecto.
+Elija una regla y cúmplala.
+Sin embargo, cuando una cadena contiene comillas simples o dobles, utilice la
+otra para evitar barras invertidas en la cadena. Mejora la legibilidad.</p>
+
+<p>Para cadenas entre comillas triples, utilice siempre comillas dobles para ser
+coherente con la convención de cadena de documentos en PEP 257<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
+
+<p class="notice--primary">En progreso…</p>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://peps.python.org/pep-0008/">PEP 8</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://peps.python.org/pep-0257/">PEP 257</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time class="dt-published" datetime="2024-10-13T04:26:23+00:00">October 13, 2024</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/tutoriales/guia-de-markdown/" class="pagination--pager" title="Guía de Markdown
+">Anterior</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Siguiente</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Términos de búsqueda...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Términos de búsqueda..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow", style="text-align: center;">
+    <ul class="social-icons">
+        
+            
+                
+                <li>
+                    <a href="https://www.facebook.com/groups/ayudapython" rel="nofollow noopener noreferrer">
+                        <i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i>
+                        Facebook
+                    </a>
+                </li>
+            
+            
+                
+                <li>
+                    <a href="https://github.com/AyudaEnPython" rel="nofollow noopener noreferrer">
+                        <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+                        GitHub
+                    </a>
+                </li>
+            
+            
+                
+                <li>
+                    <a href="https://ayudaenpython.com" rel="nofollow noopener noreferrer">
+                        <i class="fas fa-fw fa-link" aria-hidden="true"></i>
+                        Website
+                    </a>
+                </li>
+            
+            
+        
+    </ul>
+</div>
+
+<div class="page__footer-copyright", style="text-align: center;">
+    &copy; 2024 <a href="https://ayudaenpython.github.io/blog/" style="text-decoration: none;"> AyudaEnPython</a>.
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+
+  </body>
+</html>
