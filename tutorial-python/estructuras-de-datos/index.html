@@ -30,7 +30,7 @@
 
 
 
-  <meta property="article:published_time" content="2024-10-12T01:33:46+00:00">
+  <meta property="article:published_time" content="2024-10-13T04:26:23+00:00">
 
 
 
@@ -281,7 +281,7 @@
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Estructuras de Datos">
     <meta itemprop="description" content="Listas, tuplas, diccionarios y conjuntos">
-    <meta itemprop="datePublished" content="2024-10-12T01:33:46+00:00">
+    <meta itemprop="datePublished" content="2024-10-13T04:26:23+00:00">
     
 
     <div class="page__inner-wrap">
@@ -327,6 +327,11 @@ para almacenar colecciones de elementos homogéneos.</p>
 <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
 </code></pre></div></div>
 
+<script type="text/notebook-cell" data-kernel="python">
+pares = [2, 4, 6, 8]
+print(pares)
+</script>
+
 <h2 id="tuplas-tuple">Tuplas (<code class="language-plaintext highlighter-rouge">tuple</code>)</h2>
 
 <p>Son secuencias inmutables usadas normalmente para almacenar colecciones de datos
@@ -336,6 +341,11 @@ heterogéneos.</p>
 <span class="k">print</span><span class="p">(</span><span class="n">vocales</span><span class="p">)</span>
 <span class="p">(</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'e'</span><span class="p">,</span> <span class="s">'i'</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span> <span class="s">'u'</span><span class="p">)</span>
 </code></pre></div></div>
+
+<script type="text/notebook-cell" data-kernel="python">
+vocales = ('a', 'e', 'i', 'o', 'u')
+print(vocales)
+</script>
 
 <h2 id="diccionarios-dict">Diccionarios (<code class="language-plaintext highlighter-rouge">dict</code>)</h2>
 
@@ -352,10 +362,17 @@ mutables.</p>
 <span class="mi">21</span>
 </code></pre></div></div>
 
+<script type="text/notebook-cell" data-kernel="python">
+datos = {'nombre': 'John', 'apellido': 'Doe', 'edad': 21}
+print(datos['nombre'])
+print(datos['apellido'])
+print(datos['edad'])
+</script>
+
 <h2 id="conjuntos-set">Conjuntos (<code class="language-plaintext highlighter-rouge">set</code>)</h2>
 
 <p>Un conjunto (<code class="language-plaintext highlighter-rouge">set</code>) es una colección no ordenada y sin elementos repetidos.
-Los usos básicos incluyen verificación de pertenencia y eliminación de 
+Los usos básicos incluyen verificación de pertenencia y eliminación de
 entradas duplicadas. Los conjuntos también soportan operaciones matemáticas
 como la unión, intersección, diferencia y diferencia simétrica.</p>
 
@@ -368,7 +385,15 @@ como la unión, intersección, diferencia y diferencia simétrica.</p>
 <span class="bp">False</span>
 </code></pre></div></div>
 
+<script type="text/notebook-cell" data-kernel="python">
+canasta = {'manzana', 'naranja', 'pera', 'plátano', 'manzana'}
+print(canasta)
+print("pera" in canasta)
+print("tomate" in canasta)
+</script>
+
 <hr />
+
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1" role="doc-endnote">
@@ -390,7 +415,7 @@ como la unión, intersección, diferencia y diferencia simétrica.</p>
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time class="dt-published" datetime="2024-10-12T01:33:46+00:00">October 12, 2024</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Actualizado:</strong> <time class="dt-published" datetime="2024-10-13T04:26:23+00:00">October 13, 2024</time></p>
 
       </footer>
 
